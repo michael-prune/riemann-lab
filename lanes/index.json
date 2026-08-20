@@ -1,0 +1,13 @@
+{
+  "schema": "riemann-lab.lanes.v1",
+  "lanes": [
+    {"id":"formal-foundations","title":"Formal Foundations and Autoformalization","readme":"formal-foundations/README.md"},
+    {"id":"explicit-formula-zero-density","title":"Explicit Formula, Critical Line, and Zero Density","readme":"explicit-formula-zero-density/README.md"},
+    {"id":"pair-correlation-moments","title":"Pair Correlation, Moments, and Random Matrices","readme":"pair-correlation-moments/README.md"},
+    {"id":"spectral-geometric","title":"Spectral and Geometric Programs","readme":"spectral-geometric/README.md"},
+    {"id":"positivity-equivalent-criteria","title":"Positivity and Equivalent Criteria","readme":"positivity-equivalent-criteria/README.md"},
+    {"id":"prime-distribution","title":"Prime Distribution and Multiplicative Functions","readme":"prime-distribution/README.md"},
+    {"id":"rigorous-computation","title":"Rigorous Computation and Certified Zeros","readme":"rigorous-computation/README.md"},
+    {"id":"generalized-l-functions","title":"Generalized L-functions and Transfer","readme":"generalized-l-functions/README.md"}
+  ]
+}

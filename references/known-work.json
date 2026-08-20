@@ -1,0 +1,14 @@
+{
+  "schema": "riemann-lab.known-work.v1",
+  "records": [
+    {"id":"clay-rh","title":"The Riemann Hypothesis","url":"https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf","kind":"official_statement","note":"RH remains open."},
+    {"id":"mathlib-zeta-zeros","title":"Mathlib ZetaZeros","url":"https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/LSeries/ZetaZeros.html","kind":"formal_foundation"},
+    {"id":"formalizing-zeta","title":"Formalizing zeta and L-functions in Lean","url":"https://arxiv.org/abs/2503.00959","kind":"paper"},
+    {"id":"pnt-plus","title":"PrimeNumberTheoremAnd","url":"https://github.com/AlexKontorovich/PrimeNumberTheoremAnd","kind":"formalization_project"},
+    {"id":"zeta-23","title":"More than two thirds of the zeta zeros are simple and on the critical line","url":"https://arxiv.org/abs/2608.13637","kind":"paper","note":"Important milestone toward RH, not RH itself."},
+    {"id":"zeta-23-comparator","title":"Zeta23 trusted statement comparator","url":"https://github.com/anthropics/zeta-23-lean/blob/main/comparator/README.md","kind":"verification_design"},
+    {"id":"lean-checklist","title":"Did you prove it?","url":"https://leanprover-community.github.io/did_you_prove_it.html","kind":"verification_checklist"},
+    {"id":"rigorous-height","title":"Rigorous verification at finite height","url":"https://arxiv.org/abs/2004.09765","kind":"computation"},
+    {"id":"deepseek-prover-v2","title":"DeepSeek-Prover-V2","url":"https://github.com/deepseek-ai/DeepSeek-Prover-V2","kind":"tool"}
+  ]
+}

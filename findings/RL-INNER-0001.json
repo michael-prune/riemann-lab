@@ -1,0 +1,14 @@
+{
+  "schema": "riemann-lab.finding.v1",
+  "id": "RL-INNER-0001",
+  "layer": "inner_core",
+  "claimLevel": "internal_theorem",
+  "title": "Controlled Lean sanity theorem",
+  "statement": "For natural numbers, 1 + 1 = 2.",
+  "assumptions": [],
+  "evidence": [{"kind":"lean4","path":"lean/solutions/OnePlusOne.lean","sha256":"fixture"}],
+  "doesNotEstablish": ["Any theorem about zeta zeros.", "The Riemann Hypothesis.", "External peer review or novelty."],
+  "nearestFailureMode": "The verified statement is intentionally trivial and is not an analytic-number-theory contribution.",
+  "verificationState": "controlled_fixture",
+  "coreDecision": "seeded_internal_fixture"
+}

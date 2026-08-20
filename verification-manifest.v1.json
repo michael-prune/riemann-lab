@@ -1,0 +1,11 @@
+{
+  "schema": "riemann-lab.verification-manifest.v1",
+  "proofSystem": "lean4",
+  "toolchain": "v4.19.0",
+  "mathlibRevision": "v4.19.0 (c44e0c8ee63ca166450922a373c7409c5d26b00b)",
+  "buildCommand": "lake build",
+  "trustedStatementPath": "RiemannLab/Trusted/OnePlusOne.lean",
+  "solutionPath": "RiemannLab/Solutions/OnePlusOne.lean",
+  "declaration": "RiemannLab.Solutions.onePlusOne",
+  "artifactSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+}
