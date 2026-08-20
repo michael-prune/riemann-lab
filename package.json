@@ -1,0 +1,1 @@
+{"name":"riemann-lab","private":true,"type":"module","scripts":{"test":"node --test tests/*.test.mjs","verify:lean-policy":"node scripts/verify-lean-policy.mjs"}}

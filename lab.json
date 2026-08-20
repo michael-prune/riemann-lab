@@ -1,0 +1,13 @@
+{
+  "schema": "riemann-lab.lab.v1",
+  "id": "riemann-lab",
+  "title": "Riemann Lab",
+  "status": "active",
+  "repository": "https://github.com/michael-prune/riemann-lab",
+  "claimBoundary": "RH remains open. Internal verification is not external acceptance, novelty, or a proof of RH.",
+  "corePolicyRevision": "riemann-core-policy-v1",
+  "verificationSystems": ["lean4"],
+  "primaryLaneRequired": true,
+  "outerCorePublic": true,
+  "innerCorePublic": true
+}
