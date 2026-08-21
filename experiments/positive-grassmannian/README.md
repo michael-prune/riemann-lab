@@ -120,11 +120,12 @@ minors would become sums of positive nonintersecting-path weights. If the same
 construction works uniformly for every rank and shift, it would prove the
 Toeplitz total-positivity criterion and hence RH.
 
-The first calibration target is rank two. After symmetrizing the two moment
-integrals, `D_(2,k)` has positive and negative pointwise regions even though its
-integral is known to be positive. A geometric pairing must reproduce that known
-Turan inequality without importing the inequality itself. Rank three is the
-first serious test of whether the pairing extends beyond the calibration case.
+The [rank-two transport calibration](rank-two-transport.md) shows that a pairing
+confined to fixed `uv` fibers cannot work: some complete fibers have negative
+mass. It also reconstructs the classical Turan proof as a beta-simplex followed
+by continuous Cauchy-Binet cancellation over an ordered chamber. The higher-rank
+target is now the square-tail cumulative kernel and an exact, non-circular
+composition back to the xi Toeplitz minors.
 
 ## Baseline experiment
 
@@ -183,8 +184,8 @@ Stop or reclassify a proposed construction if any of these occurs:
 
 ## Next proof attempts
 
-1. Derive the rank-two determinant as an explicit signed double integral and
-   search for a theta-specific, measure-preserving chamber involution.
+1. Interval-test the two-way Wronskians of the square-tail kernel through rank
+   six; one wrong sign kills the corresponding sign-regularity conjecture.
 2. Express rank-three permutation chambers over the common `6k`-dimensional
    simplex fiber and test whether an LGV-style crossing swap preserves the
    theta weight.
@@ -204,3 +205,7 @@ Stop or reclassify a proposed construction if any of these occurs:
 - A. Postnikov, [Total positivity, Grassmannians, and networks](https://arxiv.org/abs/math/0609764).
 - N. Arkani-Hamed et al., [Surface Water Wave Scattering and the Hydrotope](https://arxiv.org/abs/2606.28280).
 - D. H. J. Polymath, [Effective approximation of heat flow evolution of the Riemann xi function](https://arxiv.org/abs/1904.12438).
+- G. Csordas, T. Norfolk, and R. Varga, [The Riemann Hypothesis and the Turan inequalities](https://www.math.kent.edu/~varga/pub/paper_157.pdf).
+- J. Nuttall, [Wronskians, Cumulants, and the Riemann Hypothesis](https://publish.uwo.ca/~jnuttall/det3CAEXP_2.pdf).
+- J. Nuttall, [Cumulants, the Riemann Hypothesis, and Similar Problems](https://publish.uwo.ca/~jnuttall/cumanal_a.pdf).
+- P. Planat and P. Sole, [Second-Level Concavity of the Riemann Xi Kernel](https://arxiv.org/abs/2608.19160).

@@ -29,7 +29,26 @@ test("positive-geometry lane anchors the relevant primary literature", async () 
     "xi-toeplitz-cubic-wedge",
     "postnikov-positive-grassmannian",
     "hydrotope",
+    "cnv-turan-1986",
+    "nuttall-rh-rr3",
+    "nuttall-cumulants",
+    "xi-kernel-second-level-concavity",
   ]) {
     assert.ok(known.records.some((record) => record.id === id), `missing ${id}`);
   }
+});
+
+test("rank-two transport records the fiber obstruction and finite sign-regular scan", async () => {
+  const result = await json("experiments/positive-grassmannian/results/rank-two-transport-v1.json");
+  assert.equal(result.schema, "riemann-lab.rank-two-transport.v1");
+  assert.equal(result.status, "high_precision_numeric_not_interval_certified");
+  assert.ok(result.fixedProductFibers.some((fiber) => fiber.sign === "positive"));
+  assert.ok(result.fixedProductFibers.some((fiber) => fiber.sign === "negative"));
+  assert.equal(result.squareTailSignRegularity.totalMinorCount, 923);
+  assert.equal(result.squareTailSignRegularity.totalBadSignCount, 0);
+  assert.deepEqual(
+    result.squareTailSignRegularity.ranks.map((record) => record.minorCount),
+    [36, 225, 400, 225, 36, 1],
+  );
+  assert.ok(result.interpretationBoundary.some((line) => /not.*all minors/i.test(line)));
 });
