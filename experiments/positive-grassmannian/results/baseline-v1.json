@@ -1,0 +1,1212 @@
+{
+  "schema": "riemann-lab.positive-grassmannian-scan.v1",
+  "status": "high_precision_numeric_not_interval_certified",
+  "normalization": {
+    "completedFunction": "xi(1/2 + sqrt(z)/2) / 8 = sum_k a_k z^k",
+    "kernel": "Phi(u)=sum_n (2*pi^2*n^4*e^(9u)-3*pi*n^2*e^(5u))*e^(-pi*n^2*e^(4u))",
+    "minorSignPreservingScale": "b_k=(a_k/a_0)*(a_0/a_1)^k",
+    "scale": "173.122752299399099989159555970"
+  },
+  "parameters": {
+    "decimalPrecision": 100,
+    "thetaTerms": 14,
+    "integrationBreaks": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1,
+      1.5,
+      2
+    ],
+    "maxCoefficient": 20,
+    "maxRank": 6,
+    "maxShift": 12
+  },
+  "coefficients": [
+    {
+      "index": 0,
+      "a": "0.0621400972735392637390967174607",
+      "normalized": "1.00000000000000000000000000000"
+    },
+    {
+      "index": 1,
+      "a": "0.000358936629924147461488279320276",
+      "normalized": "1.00000000000000000000000000000"
+    },
+    {
+      "index": 2,
+      "a": "0.000000964468891174359428830826496054",
+      "normalized": "0.465183809695154565254087792147"
+    },
+    {
+      "index": 3,
+      "a": "0.00000000162569429958110756250929438642",
+      "normalized": "0.135746736596546490466130531905"
+    },
+    {
+      "index": 4,
+      "a": "1.94932937077350447984632337062e-12",
+      "normalized": "0.0281792797905467380437253560543"
+    },
+    {
+      "index": 5,
+      "a": "1.78418283204479502714991977253e-15",
+      "normalized": "0.00446517173323315211743689088656"
+    },
+    {
+      "index": 6,
+      "a": "1.30448609788111723561865541338e-18",
+      "normalized": "0.000565187324894146863293702790760"
+    },
+    {
+      "index": 7,
+      "a": "7.86562052506866955238122615112e-22",
+      "normalized": "0.0000589983813263869190538162572296"
+    },
+    {
+      "index": 8,
+      "a": "4.00499307279496908361506974100e-25",
+      "normalized": "0.00000520071462282364621848592225380"
+    },
+    {
+      "index": 9,
+      "a": "1.75387434744871624835627529336e-28",
+      "normalized": "0.000000394288289174689973666802354878"
+    },
+    {
+      "index": 10,
+      "a": "6.70296858229964290902650026304e-32",
+      "normalized": "0.0000000260877566006487452765479895366"
+    },
+    {
+      "index": 11,
+      "a": "2.26252082896449646114041722752e-35",
+      "normalized": "0.00000000152446087923460590467835633892"
+    },
+    {
+      "index": 12,
+      "a": "6.81232130454512280834382719414e-39",
+      "normalized": "7.94644659768811689882385314834e-11"
+    },
+    {
+      "index": 13,
+      "a": "1.84515614681742073723472023211e-42",
+      "normalized": "3.72619104696368868584165964386e-12"
+    },
+    {
+      "index": 14,
+      "a": "4.52841326270924920495249582895e-46",
+      "normalized": "1.58318692758108699553621901857e-13"
+    },
+    {
+      "index": 15,
+      "a": "1.01334877157557187981762821937e-49",
+      "normalized": "6.13337099125441362988787802235e-15"
+    },
+    {
+      "index": 16,
+      "a": "2.07902823201563198699536578774e-53",
+      "normalized": "2.17848625513181785908421465858e-16"
+    },
+    {
+      "index": 17,
+      "a": "3.92972322050965170089587313215e-57",
+      "normalized": "7.12870344338551223827929959333e-18"
+    },
+    {
+      "index": 18,
+      "a": "6.87296897781145983130725065078e-61",
+      "normalized": "2.15847546629295938708427820477e-19"
+    },
+    {
+      "index": 19,
+      "a": "1.11659027111150492328572906517e-64",
+      "normalized": "6.07086702752629351413337118056e-21"
+    },
+    {
+      "index": 20,
+      "a": "1.69095113231392455815100968335e-68",
+      "normalized": "1.59162988753591314335797764019e-22"
+    }
+  ],
+  "seriesChecks": [
+    {
+      "z": "0.25000000",
+      "series": "0.0622298917357350887434270518675",
+      "directCompletedXi": "0.0622298917357350887434270518675",
+      "relativeError": "8.74964349831e-84"
+    },
+    {
+      "z": "1.0000000",
+      "series": "0.0625000000000000000000000000000",
+      "directCompletedXi": "0.0625000000000000000000000000000",
+      "relativeError": "3.83188499124e-71"
+    },
+    {
+      "z": "4.0000000",
+      "series": "0.0635913798407904947532089045840",
+      "directCompletedXi": "0.0635913798407904947532089045840",
+      "relativeError": "1.65701766071e-58"
+    }
+  ],
+  "consecutiveMinorSummary": {
+    "positive": 78,
+    "negative": 0,
+    "zero": 0
+  },
+  "consecutiveMinors": [
+    {
+      "rank": 1,
+      "shift": 0,
+      "value": "1.00000000000000000000000000000",
+      "sign": "positive",
+      "cancellationMargin": "1.00000000000000000"
+    },
+    {
+      "rank": 1,
+      "shift": 1,
+      "value": "1.00000000000000000000000000000",
+      "sign": "positive",
+      "cancellationMargin": "1.00000000000000000"
+    },
+    {
+      "rank": 1,
+      "shift": 2,
+      "value": "0.465183809695154565254087792147",
+      "sign": "positive",
+      "cancellationMargin": "1.00000000000000000"
+    },
+    {
+      "rank": 1,
+      "shift": 3,
+      "value": "0.135746736596546490466130531905",
+      "sign": "positive",
+      "cancellationMargin": "1.00000000000000000"
+    },
+    {
+      "rank": 1,
+      "shift": 4,
+      "value": "0.0281792797905467380437253560543",
+      "sign": "positive",
+      "cancellationMargin": "1.00000000000000000"
+    },
+    {
+      "rank": 1,
+      "shift": 5,
+      "value": "0.00446517173323315211743689088656",
+      "sign": "positive",
+      "cancellationMargin": "1.00000000000000000"
+    },
+    {
+      "rank": 1,
+      "shift": 6,
+      "value": "0.000565187324894146863293702790760",
+      "sign": "positive",
+      "cancellationMargin": "1.00000000000000000"
+    },
+    {
+      "rank": 1,
+      "shift": 7,
+      "value": "0.0000589983813263869190538162572296",
+      "sign": "positive",
+      "cancellationMargin": "1.00000000000000000"
+    },
+    {
+      "rank": 1,
+      "shift": 8,
+      "value": "0.00000520071462282364621848592225380",
+      "sign": "positive",
+      "cancellationMargin": "1.00000000000000000"
+    },
+    {
+      "rank": 1,
+      "shift": 9,
+      "value": "0.000000394288289174689973666802354878",
+      "sign": "positive",
+      "cancellationMargin": "1.00000000000000000"
+    },
+    {
+      "rank": 1,
+      "shift": 10,
+      "value": "0.0000000260877566006487452765479895366",
+      "sign": "positive",
+      "cancellationMargin": "1.00000000000000000"
+    },
+    {
+      "rank": 1,
+      "shift": 11,
+      "value": "0.00000000152446087923460590467835633892",
+      "sign": "positive",
+      "cancellationMargin": "1.00000000000000000"
+    },
+    {
+      "rank": 1,
+      "shift": 12,
+      "value": "7.94644659768811689882385314834e-11",
+      "sign": "positive",
+      "cancellationMargin": "1.00000000000000000"
+    },
+    {
+      "rank": 2,
+      "shift": 0,
+      "value": "1.00000000000000000000000000000",
+      "sign": "positive",
+      "cancellationMargin": "1.00000000000000000"
+    },
+    {
+      "rank": 2,
+      "shift": 1,
+      "value": "0.534816190304845434745912207853",
+      "sign": "positive",
+      "cancellationMargin": "0.365016448288572771"
+    },
+    {
+      "rank": 2,
+      "shift": 2,
+      "value": "0.0806492402059512880343805616307",
+      "sign": "positive",
+      "cancellationMargin": "0.229024305025333441"
+    },
+    {
+      "rank": 2,
+      "shift": 3,
+      "value": "0.00531863176917996547425620233716",
+      "sign": "positive",
+      "cancellationMargin": "0.168654197929831373"
+    },
+    {
+      "rank": 2,
+      "shift": 4,
+      "value": "0.000187939318384370158989894300638",
+      "sign": "positive",
+      "cancellationMargin": "0.134222783273842946"
+    },
+    {
+      "rank": 2,
+      "shift": 5,
+      "value": "0.00000401118684500154577113583813402",
+      "sign": "positive",
+      "cancellationMargin": "0.111843349748131099"
+    },
+    {
+      "rank": 2,
+      "shift": 6,
+      "value": "0.0000000559988076159084071437663350402",
+      "sign": "positive",
+      "cancellationMargin": "0.0960735053463754247"
+    },
+    {
+      "rank": 2,
+      "shift": 7,
+      "value": "5.41431013922192117002609428050e-10",
+      "sign": "positive",
+      "cancellationMargin": "0.0843325926865356233"
+    },
+    {
+      "rank": 2,
+      "shift": 8,
+      "value": "3.78506175079462620234667256327e-12",
+      "sign": "positive",
+      "cancellationMargin": "0.0752350733473651109"
+    },
+    {
+      "rank": 2,
+      "shift": 9,
+      "value": "1.97882777506459163569916403664e-14",
+      "sign": "positive",
+      "cancellationMargin": "0.0679686676684052992"
+    },
+    {
+      "rank": 2,
+      "shift": 10,
+      "value": "7.94939724675357551458982623842e-17",
+      "sign": "positive",
+      "cancellationMargin": "0.0620248034134590672"
+    },
+    {
+      "rank": 2,
+      "shift": 11,
+      "value": "2.50931325511338327739609412351e-19",
+      "sign": "positive",
+      "cancellationMargin": "0.0570683598199357968"
+    },
+    {
+      "rank": 2,
+      "shift": 12,
+      "value": "6.34168873340523322068911445711e-22",
+      "sign": "positive",
+      "cancellationMargin": "0.0528692859218789210"
+    },
+    {
+      "rank": 3,
+      "shift": 0,
+      "value": "1.00000000000000000000000000000",
+      "sign": "positive",
+      "cancellationMargin": "1.00000000000000000"
+    },
+    {
+      "rank": 3,
+      "shift": 1,
+      "value": "0.205379117206237359957954947612",
+      "sign": "positive",
+      "cancellationMargin": "0.0994035575093520903"
+    },
+    {
+      "rank": 3,
+      "shift": 2,
+      "value": "0.00786744828408459932366116543535",
+      "sign": "positive",
+      "cancellationMargin": "0.0274439544792178635"
+    },
+    {
+      "rank": 3,
+      "shift": 3,
+      "value": "0.0000967292547343686127854014362591",
+      "sign": "positive",
+      "cancellationMargin": "0.0114788152658636815"
+    },
+    {
+      "rank": 3,
+      "shift": 4,
+      "value": "0.000000496363346146693664939624651507",
+      "sign": "positive",
+      "cancellationMargin": "0.00593484480547095780"
+    },
+    {
+      "rank": 3,
+      "shift": 5,
+      "value": "0.00000000124636688224586123110151871766",
+      "sign": "positive",
+      "cancellationMargin": "0.00348899988167753333"
+    },
+    {
+      "rank": 3,
+      "shift": 6,
+      "value": "1.70578045794558084308500380307e-12",
+      "sign": "positive",
+      "cancellationMargin": "0.00223582255563330547"
+    },
+    {
+      "rank": 3,
+      "shift": 7,
+      "value": "1.37611568681156032966385229491e-15",
+      "sign": "positive",
+      "cancellationMargin": "0.00152429001360543942"
+    },
+    {
+      "rank": 3,
+      "shift": 8,
+      "value": "6.94655529678120635087399962833e-19",
+      "sign": "positive",
+      "cancellationMargin": "0.00108883245746939835"
+    },
+    {
+      "rank": 3,
+      "shift": 9,
+      "value": "2.30000089327884654701905816234e-22",
+      "sign": "positive",
+      "cancellationMargin": "0.000806634727556234781"
+    },
+    {
+      "rank": 3,
+      "shift": 10,
+      "value": "5.18938026690866383351068160350e-26",
+      "sign": "positive",
+      "cancellationMargin": "0.000615310531443556237"
+    },
+    {
+      "rank": 3,
+      "shift": 11,
+      "value": "8.23499463763249813331187550407e-30",
+      "sign": "positive",
+      "cancellationMargin": "0.000480768262266390129"
+    },
+    {
+      "rank": 3,
+      "shift": 12,
+      "value": "9.43925950313841721153795054139e-34",
+      "sign": "positive",
+      "cancellationMargin": "0.000383254958677865714"
+    },
+    {
+      "rank": 4,
+      "shift": 0,
+      "value": "1.00000000000000000000000000000",
+      "sign": "positive",
+      "cancellationMargin": "1.00000000000000000"
+    },
+    {
+      "rank": 4,
+      "shift": 1,
+      "value": "0.0641587411195803256267834248522",
+      "sign": "positive",
+      "cancellationMargin": "0.0220354090227363499"
+    },
+    {
+      "rank": 4,
+      "shift": 2,
+      "value": "0.000521152752959007972740598273020",
+      "sign": "positive",
+      "cancellationMargin": "0.00229981318459974542"
+    },
+    {
+      "rank": 4,
+      "shift": 3,
+      "value": "0.00000102496957904318088250845688688",
+      "sign": "positive",
+      "cancellationMargin": "0.000456888681268211929"
+    },
+    {
+      "rank": 4,
+      "shift": 4,
+      "value": "6.69452421314970289127332891905e-10",
+      "sign": "positive",
+      "cancellationMargin": "0.000130529646889833432"
+    },
+    {
+      "rank": 4,
+      "shift": 5,
+      "value": "1.76193116045554886563029646573e-13",
+      "sign": "positive",
+      "cancellationMargin": "0.0000469708565047934208"
+    },
+    {
+      "rank": 4,
+      "shift": 6,
+      "value": "2.13315604989549434482101510993e-17",
+      "sign": "positive",
+      "cancellationMargin": "0.0000198155954994174650"
+    },
+    {
+      "rank": 4,
+      "shift": 7,
+      "value": "1.30905791824834914304116564246e-21",
+      "sign": "positive",
+      "cancellationMargin": "9.38865090191294565e-6"
+    },
+    {
+      "rank": 4,
+      "shift": 8,
+      "value": "4.38670713853929054790374855939e-26",
+      "sign": "positive",
+      "cancellationMargin": "4.85971041432666586e-6"
+    },
+    {
+      "rank": 4,
+      "shift": 9,
+      "value": "8.51601353239475743036476173584e-31",
+      "sign": "positive",
+      "cancellationMargin": "2.69681884187617350e-6"
+    },
+    {
+      "rank": 4,
+      "shift": 10,
+      "value": "1.00500355987901426385193467247e-35",
+      "sign": "positive",
+      "cancellationMargin": "1.58310827470470408e-6"
+    },
+    {
+      "rank": 4,
+      "shift": 11,
+      "value": "7.50453521243147036797449111251e-41",
+      "sign": "positive",
+      "cancellationMargin": "9.73425567299956253e-7"
+    },
+    {
+      "rank": 4,
+      "shift": 12,
+      "value": "3.66782611123245229534147926197e-46",
+      "sign": "positive",
+      "cancellationMargin": "6.22274351623933261e-7"
+    },
+    {
+      "rank": 5,
+      "shift": 0,
+      "value": "1.00000000000000000000000000000",
+      "sign": "positive",
+      "cancellationMargin": "1.00000000000000000"
+    },
+    {
+      "rank": 5,
+      "shift": 1,
+      "value": "0.0175051454013219092254594245188",
+      "sign": "positive",
+      "cancellationMargin": "0.00426509377906816226"
+    },
+    {
+      "rank": 5,
+      "shift": 2,
+      "value": "0.0000261634302008540179316561311815",
+      "sign": "positive",
+      "cancellationMargin": "0.000146505349816227744"
+    },
+    {
+      "rank": 5,
+      "shift": 3,
+      "value": "0.00000000725401707629692389752806676227",
+      "sign": "positive",
+      "cancellationMargin": "0.0000123691979707644881"
+    },
+    {
+      "rank": 5,
+      "shift": 4,
+      "value": "5.39068733616522536224298569664e-13",
+      "sign": "positive",
+      "cancellationMargin": "1.74401238307581723e-6"
+    },
+    {
+      "rank": 5,
+      "shift": 5,
+      "value": "1.34499316005440775555301561443e-17",
+      "sign": "positive",
+      "cancellationMargin": "3.44417417068580357e-7"
+    },
+    {
+      "rank": 5,
+      "shift": 6,
+      "value": "1.31545931702454532540137897523e-22",
+      "sign": "positive",
+      "cancellationMargin": "8.63467645876257488e-8"
+    },
+    {
+      "rank": 5,
+      "shift": 7,
+      "value": "5.65271912539237838094805626372e-28",
+      "sign": "positive",
+      "cancellationMargin": "2.58572060527436142e-8"
+    },
+    {
+      "rank": 5,
+      "shift": 8,
+      "value": "1.16536099216991414693144459540e-33",
+      "sign": "positive",
+      "cancellationMargin": "8.88328859214553839e-9"
+    },
+    {
+      "rank": 5,
+      "shift": 9,
+      "value": "1.23634402331062136516356116516e-39",
+      "sign": "positive",
+      "cancellationMargin": "3.40434965012625453e-9"
+    },
+    {
+      "rank": 5,
+      "shift": 10,
+      "value": "7.14815453978035844219741744147e-46",
+      "sign": "positive",
+      "cancellationMargin": "1.42609697911719459e-9"
+    },
+    {
+      "rank": 5,
+      "shift": 11,
+      "value": "2.36263247551539776799261473668e-52",
+      "sign": "positive",
+      "cancellationMargin": "6.43196186514918731e-10"
+    },
+    {
+      "rank": 5,
+      "shift": 12,
+      "value": "4.64899024080922755879284998125e-59",
+      "sign": "positive",
+      "cancellationMargin": "3.08734047988440666e-10"
+    },
+    {
+      "rank": 6,
+      "shift": 0,
+      "value": "1.00000000000000000000000000000",
+      "sign": "positive",
+      "cancellationMargin": "1.00000000000000000"
+    },
+    {
+      "rank": 6,
+      "shift": 1,
+      "value": "0.00436833205312119511675705461902",
+      "sign": "positive",
+      "cancellationMargin": "0.000755047471163740100"
+    },
+    {
+      "rank": 6,
+      "shift": 2,
+      "value": "0.00000106982540732076825631875600381",
+      "sign": "positive",
+      "cancellationMargin": "7.59618102223802413e-6"
+    },
+    {
+      "rank": 6,
+      "shift": 3,
+      "value": "3.75785558374567537378399776762e-11",
+      "sign": "positive",
+      "cancellationMargin": "2.45671765845392915e-7"
+    },
+    {
+      "rank": 6,
+      "shift": 4,
+      "value": "2.88338737618413726181405518088e-16",
+      "sign": "positive",
+      "cancellationMargin": "1.56362880252553014e-8"
+    },
+    {
+      "rank": 6,
+      "shift": 5,
+      "value": "6.24248913423092273857391241810e-22",
+      "sign": "positive",
+      "cancellationMargin": "1.55779047915593790e-9"
+    },
+    {
+      "rank": 6,
+      "shift": 6,
+      "value": "4.54793899798405971076237247219e-28",
+      "sign": "positive",
+      "cancellationMargin": "2.14032484882787177e-10"
+    },
+    {
+      "rank": 6,
+      "shift": 7,
+      "value": "1.26987381768040584689730769461e-34",
+      "sign": "positive",
+      "cancellationMargin": "3.74848931521098811e-11"
+    },
+    {
+      "rank": 6,
+      "shift": 8,
+      "value": "1.50271187621952410195817205562e-41",
+      "sign": "positive",
+      "cancellationMargin": "7.93836638310545801e-12"
+    },
+    {
+      "rank": 6,
+      "shift": 9,
+      "value": "8.16730145700080576738164199514e-49",
+      "sign": "positive",
+      "cancellationMargin": "1.95859242620949220e-12"
+    },
+    {
+      "rank": 6,
+      "shift": 10,
+      "value": "2.17768859678336269617044879484e-56",
+      "sign": "positive",
+      "cancellationMargin": "5.47838206711000778e-13"
+    },
+    {
+      "rank": 6,
+      "shift": 11,
+      "value": "3.00999606357318807367121895799e-64",
+      "sign": "positive",
+      "cancellationMargin": "1.70182516857580963e-13"
+    },
+    {
+      "rank": 6,
+      "shift": 12,
+      "value": "2.26012112889091021098867873729e-72",
+      "sign": "positive",
+      "cancellationMargin": "5.77852042156491087e-14"
+    }
+  ],
+  "pluckerSlices": [
+    {
+      "rank": 4,
+      "width": 9,
+      "offset": 0,
+      "pluckerCoordinateCount": 126,
+      "negativeCount": 0,
+      "zeroCount": 0,
+      "minimum": "1.76193116045554886563029646573e-13",
+      "maximum": "1.00000000000000000000000000000",
+      "negativeColumnSets": [],
+      "zeroColumnSets": []
+    },
+    {
+      "rank": 4,
+      "width": 9,
+      "offset": 1,
+      "pluckerCoordinateCount": 126,
+      "negativeCount": 0,
+      "zeroCount": 0,
+      "minimum": "2.13315604989549434482101510993e-17",
+      "maximum": "0.0641587411195803256267834248522",
+      "negativeColumnSets": [],
+      "zeroColumnSets": []
+    },
+    {
+      "rank": 4,
+      "width": 9,
+      "offset": 2,
+      "pluckerCoordinateCount": 126,
+      "negativeCount": 0,
+      "zeroCount": 0,
+      "minimum": "1.30905791824834914304116564246e-21",
+      "maximum": "0.000521152752959007972740598273020",
+      "negativeColumnSets": [],
+      "zeroColumnSets": []
+    },
+    {
+      "rank": 4,
+      "width": 9,
+      "offset": 3,
+      "pluckerCoordinateCount": 126,
+      "negativeCount": 0,
+      "zeroCount": 0,
+      "minimum": "4.38670713853929054790374855939e-26",
+      "maximum": "0.00000102496957904318088250845688688",
+      "negativeColumnSets": [],
+      "zeroColumnSets": []
+    },
+    {
+      "rank": 4,
+      "width": 9,
+      "offset": 4,
+      "pluckerCoordinateCount": 126,
+      "negativeCount": 0,
+      "zeroCount": 0,
+      "minimum": "8.51601353239475743036476173584e-31",
+      "maximum": "6.69452421314970289127332891905e-10",
+      "negativeColumnSets": [],
+      "zeroColumnSets": []
+    },
+    {
+      "rank": 4,
+      "width": 9,
+      "offset": 5,
+      "pluckerCoordinateCount": 126,
+      "negativeCount": 0,
+      "zeroCount": 0,
+      "minimum": "1.00500355987901426385193467247e-35",
+      "maximum": "1.76193116045554886563029646573e-13",
+      "negativeColumnSets": [],
+      "zeroColumnSets": []
+    }
+  ],
+  "exchangeCoordinateSummary": {
+    "positive": 55,
+    "negative": 0,
+    "zero": 0
+  },
+  "exchangeCoordinates": [
+    {
+      "rank": 2,
+      "shift": 1,
+      "coordinate": "1.14968788500038842252692",
+      "sign": "positive",
+      "exchangeResidual": "7.14367119551e-102"
+    },
+    {
+      "rank": 2,
+      "shift": 2,
+      "coordinate": "0.594115499407173752829671",
+      "sign": "positive",
+      "exchangeResidual": "0.0"
+    },
+    {
+      "rank": 2,
+      "shift": 3,
+      "coordinate": "0.405737774846179692367273",
+      "sign": "positive",
+      "exchangeResidual": "1.67429793645e-103"
+    },
+    {
+      "rank": 2,
+      "shift": 4,
+      "coordinate": "0.310063098637295838644867",
+      "sign": "positive",
+      "exchangeResidual": "-1.74406035047e-105"
+    },
+    {
+      "rank": 2,
+      "shift": 5,
+      "coordinate": "0.251855007146349413001940",
+      "sign": "positive",
+      "exchangeResidual": "-1.09003771904e-106"
+    },
+    {
+      "rank": 2,
+      "shift": 6,
+      "coordinate": "0.212569287247609250008698",
+      "sign": "positive",
+      "exchangeResidual": "4.25795984001e-109"
+    },
+    {
+      "rank": 2,
+      "shift": 7,
+      "coordinate": "0.184199179774159380513732",
+      "sign": "positive",
+      "exchangeResidual": "-1.33061245000e-110"
+    },
+    {
+      "rank": 2,
+      "shift": 8,
+      "coordinate": "0.162711779348494492644203",
+      "sign": "positive",
+      "exchangeResidual": "-2.59885244141e-112"
+    },
+    {
+      "rank": 2,
+      "shift": 9,
+      "coordinate": "0.145850606756691426392350",
+      "sign": "positive",
+      "exchangeResidual": "-8.12141387941e-115"
+    },
+    {
+      "rank": 2,
+      "shift": 10,
+      "coordinate": "0.132252544926941333978787",
+      "sign": "positive",
+      "exchangeResidual": "-4.75864094497e-117"
+    },
+    {
+      "rank": 2,
+      "shift": 11,
+      "coordinate": "0.121044532579345631428916",
+      "sign": "positive",
+      "exchangeResidual": "3.40788088507e-119"
+    },
+    {
+      "rank": 3,
+      "shift": 1,
+      "coordinate": "2.54657225141572970441225",
+      "sign": "positive",
+      "exchangeResidual": "-5.35775339664e-102"
+    },
+    {
+      "rank": 3,
+      "shift": 2,
+      "coordinate": "1.28663102204638048588436",
+      "sign": "positive",
+      "exchangeResidual": "8.37148968224e-104"
+    },
+    {
+      "rank": 3,
+      "shift": 3,
+      "coordinate": "0.866301989506263847885197",
+      "sign": "positive",
+      "exchangeResidual": "1.09003771904e-106"
+    },
+    {
+      "rank": 3,
+      "shift": 4,
+      "coordinate": "0.655626919606354807128359",
+      "sign": "positive",
+      "exchangeResidual": "-6.38693976001e-109"
+    },
+    {
+      "rank": 3,
+      "shift": 5,
+      "coordinate": "0.528795365643036874844641",
+      "sign": "positive",
+      "exchangeResidual": "-7.27678683595e-112"
+    },
+    {
+      "rank": 3,
+      "shift": 6,
+      "coordinate": "0.443914700150929441238225",
+      "sign": "positive",
+      "exchangeResidual": "-2.41104474545e-115"
+    },
+    {
+      "rank": 3,
+      "shift": 7,
+      "coordinate": "0.383039263181164343121905",
+      "sign": "positive",
+      "exchangeResidual": "-1.70394044253e-119"
+    },
+    {
+      "rank": 3,
+      "shift": 8,
+      "coordinate": "0.337195207953979930976332",
+      "sign": "positive",
+      "exchangeResidual": "-9.45457010461e-124"
+    },
+    {
+      "rank": 3,
+      "shift": 9,
+      "coordinate": "0.301394077286022928067961",
+      "sign": "positive",
+      "exchangeResidual": "-4.90501989070e-128"
+    },
+    {
+      "rank": 3,
+      "shift": 10,
+      "coordinate": "0.272639860975096272899366",
+      "sign": "positive",
+      "exchangeResidual": "-3.74223319298e-133"
+    },
+    {
+      "rank": 3,
+      "shift": 11,
+      "coordinate": "0.249023585956485561663411",
+      "sign": "positive",
+      "exchangeResidual": "-8.22939823177e-138"
+    },
+    {
+      "rank": 4,
+      "shift": 1,
+      "coordinate": "4.36140566309692840565161",
+      "sign": "positive",
+      "exchangeResidual": "0.0"
+    },
+    {
+      "rank": 4,
+      "shift": 2,
+      "coordinate": "2.11568590164419330976675",
+      "sign": "positive",
+      "exchangeResidual": "-2.18007543808e-105"
+    },
+    {
+      "rank": 4,
+      "shift": 3,
+      "coordinate": "1.39597390064528511927527",
+      "sign": "positive",
+      "exchangeResidual": "-1.96930642600e-108"
+    },
+    {
+      "rank": 4,
+      "shift": 4,
+      "coordinate": "1.04359892185699282758330",
+      "sign": "positive",
+      "exchangeResidual": "-1.29942622071e-113"
+    },
+    {
+      "rank": 4,
+      "shift": 5,
+      "coordinate": "0.834716484554300122825972",
+      "sign": "positive",
+      "exchangeResidual": "-9.91383530201e-118"
+    },
+    {
+      "rank": 4,
+      "shift": 6,
+      "coordinate": "0.696467027490771501032008",
+      "sign": "positive",
+      "exchangeResidual": "-1.79636831988e-123"
+    },
+    {
+      "rank": 4,
+      "shift": 7,
+      "coordinate": "0.598148970085628326364578",
+      "sign": "positive",
+      "exchangeResidual": "-1.00872996374e-129"
+    },
+    {
+      "rank": 4,
+      "shift": 8,
+      "coordinate": "0.524600451788811620260449",
+      "sign": "positive",
+      "exchangeResidual": "-2.47217840758e-136"
+    },
+    {
+      "rank": 4,
+      "shift": 9,
+      "coordinate": "0.467476030019058121178244",
+      "sign": "positive",
+      "exchangeResidual": "-7.31961579599e-143"
+    },
+    {
+      "rank": 4,
+      "shift": 10,
+      "coordinate": "0.421803787192694911572571",
+      "sign": "positive",
+      "exchangeResidual": "-1.33653465903e-150"
+    },
+    {
+      "rank": 4,
+      "shift": 11,
+      "coordinate": "0.384437069956259944870768",
+      "sign": "positive",
+      "exchangeResidual": "-1.82372909878e-157"
+    },
+    {
+      "rank": 5,
+      "shift": 1,
+      "coordinate": "6.89853653977167865141466",
+      "sign": "positive",
+      "exchangeResidual": "8.37148968224e-104"
+    },
+    {
+      "rank": 5,
+      "shift": 2,
+      "coordinate": "3.13012563546812493850043",
+      "sign": "positive",
+      "exchangeResidual": "-3.57668626561e-107"
+    },
+    {
+      "rank": 5,
+      "shift": 3,
+      "coordinate": "2.01118333799521780980150",
+      "sign": "positive",
+      "exchangeResidual": "-8.51124174562e-112"
+    },
+    {
+      "rank": 5,
+      "shift": 4,
+      "coordinate": "1.48164423210964843231609",
+      "sign": "positive",
+      "exchangeResidual": "3.46984235570e-118"
+    },
+    {
+      "rank": 5,
+      "shift": 5,
+      "coordinate": "1.17387980847363935768796",
+      "sign": "positive",
+      "exchangeResidual": "-8.53127224283e-125"
+    },
+    {
+      "rank": 5,
+      "shift": 6,
+      "coordinate": "0.972865399285777962589428",
+      "sign": "positive",
+      "exchangeResidual": "-1.20797086156e-132"
+    },
+    {
+      "rank": 5,
+      "shift": 7,
+      "coordinate": "0.831287181228746141403430",
+      "sign": "positive",
+      "exchangeResidual": "-1.83486911507e-141"
+    },
+    {
+      "rank": 5,
+      "shift": 8,
+      "coordinate": "0.726164091232527009667430",
+      "sign": "positive",
+      "exchangeResidual": "-1.42054540903e-149"
+    },
+    {
+      "rank": 5,
+      "shift": 9,
+      "coordinate": "0.645002052943017817221786",
+      "sign": "positive",
+      "exchangeResidual": "-9.56675365778e-159"
+    },
+    {
+      "rank": 5,
+      "shift": 10,
+      "coordinate": "0.580429245438003796330785",
+      "sign": "positive",
+      "exchangeResidual": "-5.44955246897e-169"
+    },
+    {
+      "rank": 5,
+      "shift": 11,
+      "coordinate": "0.527816730212664930463078",
+      "sign": "positive",
+      "exchangeResidual": "-1.11021995785e-178"
+    },
+    {
+      "rank": 6,
+      "shift": 1,
+      "coordinate": "10.7121536881436592793669",
+      "sign": "positive",
+      "exchangeResidual": "-1.39524828037e-104"
+    },
+    {
+      "rank": 6,
+      "shift": 2,
+      "coordinate": "4.39069882257976392187392",
+      "sign": "positive",
+      "exchangeResidual": "-2.26204116500e-109"
+    },
+    {
+      "rank": 6,
+      "shift": 3,
+      "coordinate": "2.73094048834528982177345",
+      "sign": "positive",
+      "exchangeResidual": "-7.49485948832e-116"
+    },
+    {
+      "rank": 6,
+      "shift": 4,
+      "coordinate": "1.97844535769633462395021",
+      "sign": "positive",
+      "exchangeResidual": "1.23204866676e-123"
+    },
+    {
+      "rank": 6,
+      "shift": 5,
+      "coordinate": "1.55104774604227731477072",
+      "sign": "positive",
+      "exchangeResidual": "-9.34182477217e-133"
+    },
+    {
+      "rank": 6,
+      "shift": 6,
+      "coordinate": "1.27602674074377450485741",
+      "sign": "positive",
+      "exchangeResidual": "-8.52887398548e-143"
+    },
+    {
+      "rank": 6,
+      "shift": 7,
+      "coordinate": "1.08438008427110258787745",
+      "sign": "positive",
+      "exchangeResidual": "-3.43782893079e-153"
+    },
+    {
+      "rank": 6,
+      "shift": 8,
+      "coordinate": "0.943230031483740395675856",
+      "sign": "positive",
+      "exchangeResidual": "-8.83866775689e-164"
+    },
+    {
+      "rank": 6,
+      "shift": 9,
+      "coordinate": "0.834950095130823603476745",
+      "sign": "positive",
+      "exchangeResidual": "-9.43763177892e-176"
+    },
+    {
+      "rank": 6,
+      "shift": 10,
+      "coordinate": "0.749251936542904994892219",
+      "sign": "positive",
+      "exchangeResidual": "-1.86216122292e-188"
+    },
+    {
+      "rank": 6,
+      "shift": 11,
+      "coordinate": "0.679731129487573333218680",
+      "sign": "positive",
+      "exchangeResidual": "-6.02536869184e-201"
+    }
+  ],
+  "controls": {
+    "negative-real-root-polynomial": {
+      "coefficients": [
+        "1.00000000000000000",
+        "1.99218750000000000",
+        "1.31774902343750000",
+        "0.370616912841796875",
+        "0.0478713512420654297",
+        "0.00289544463157653809",
+        "0.0000804290175437927246",
+        "9.49949026107788086e-7",
+        "3.72529029846191406e-9"
+      ],
+      "negativeConsecutiveMinors": []
+    },
+    "positive-coefficient-non-pf": {
+      "coefficients": [
+        "1.00000000000000000",
+        "1.00000000000000000",
+        "10.0000000000000000"
+      ],
+      "negativeConsecutiveMinors": [
+        {
+          "rank": 2,
+          "shift": 1,
+          "value": "-9.00000000000000000000000000000"
+        },
+        {
+          "rank": 3,
+          "shift": 1,
+          "value": "-19.0000000000000000000000000000"
+        }
+      ]
+    }
+  },
+  "interpretationBoundary": [
+    "Positive finite scans do not prove RH.",
+    "The signs are not certified because mpmath does not use interval arithmetic.",
+    "The positive-coefficient control must fail, showing that coefficient positivity alone is insufficient."
+  ]
+}

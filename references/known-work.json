@@ -9,6 +9,12 @@
     {"id":"zeta-23-comparator","title":"Zeta23 trusted statement comparator","url":"https://github.com/anthropics/zeta-23-lean/blob/main/comparator/README.md","kind":"verification_design"},
     {"id":"lean-checklist","title":"Did you prove it?","url":"https://leanprover-community.github.io/did_you_prove_it.html","kind":"verification_checklist"},
     {"id":"rigorous-height","title":"Rigorous verification at finite height","url":"https://arxiv.org/abs/2004.09765","kind":"computation"},
-    {"id":"deepseek-prover-v2","title":"DeepSeek-Prover-V2","url":"https://github.com/deepseek-ai/DeepSeek-Prover-V2","kind":"tool"}
+    {"id":"deepseek-prover-v2","title":"DeepSeek-Prover-V2","url":"https://github.com/deepseek-ai/DeepSeek-Prover-V2","kind":"tool"},
+    {"id":"katkova-multiple-positivity","title":"Multiple positivity and the Riemann zeta-function","url":"https://arxiv.org/abs/math/0505174","kind":"paper","note":"Establishes the Polya-frequency formulation and fixed-order asymptotic positivity."},
+    {"id":"xi-toeplitz-cubic-wedge","title":"An explicit uniform cubic wedge for consecutive Toeplitz minors of the Riemann xi coefficients","url":"https://arxiv.org/abs/2607.16795","kind":"paper","note":"Proves positivity for k at least 10^18 r^3; the complementary critical regime remains open."},
+    {"id":"xi-jensen-polynomials","title":"Jensen Polynomials for the Riemann Xi Function","url":"https://arxiv.org/abs/1910.01227","kind":"paper"},
+    {"id":"postnikov-positive-grassmannian","title":"Total positivity, Grassmannians, and networks","url":"https://arxiv.org/abs/math/0609764","kind":"paper"},
+    {"id":"hydrotope","title":"Surface Water Wave Scattering and the Hydrotope","url":"https://arxiv.org/abs/2606.28280","kind":"paper"},
+    {"id":"debruijn-newman-effective","title":"Effective approximation of heat flow evolution of the Riemann xi function","url":"https://arxiv.org/abs/1904.12438","kind":"paper"}
   ]
 }
