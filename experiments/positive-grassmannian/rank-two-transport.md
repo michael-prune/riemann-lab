@@ -152,19 +152,66 @@ The literature makes the boundary unusually informative:
   rank-two/rank-three cumulative geometry, but does not prove the all-rank
   statement here.
 
-The finite observation is therefore best read as a concrete conjecture:
+## 4. Rank-five falsification
 
-> **Square-tail conjecture.** The kernel `K(x+y)`, with
-> `K(t)=(1/2) integral_t^infinity Phi(sqrt(v))dv`, is reverse
-> sign-regular to orders beyond those available for `Phi(x+y)`, possibly to
-> every finite order.
+A coalescing-point follow-up overturns the all-rank square-tail conjecture.
+For additive kernels, the decisive local objects are
 
-Even the strongest version would not by itself prove RH.  One must still build
-an exact composition that transports these signs to all Toeplitz minors of
-`a_m`.  The factor `1/m!` and half-integer sampling in the displayed relation
-for `a_m` cannot simply be declared harmless.
+```text
+W_p(t) = det[K^(i+j-2)(t)]_(i,j=1,...,p).
+```
 
-## 4. Next falsifiable test
+The required signs for ranks four, five, and six are respectively `+`, `+`,
+and `-`.  At `t=0.001`, the derivative calculation gives the correct rank-four
+and rank-six signs but the wrong rank-five sign:
+
+```text
+W_4(0.001) =  1.8914868092e5
+W_5(0.001) = -1.1851429664e13   (required positive)
+W_6(0.001) = -4.4601867506e24
+```
+
+The failure was reproduced without numerical differentiation.  Set
+
+```text
+x_i = i h,
+y_j = 0.001 + j h,
+M_(i,j) = K(x_i+y_j),
+```
+
+for `i,j = 0,...,4`.  For each
+
+```text
+h = 0.0001, 0.00005, 0.00002, 0.00001,
+```
+
+the actual rank-five determinant `det M` is negative, although rank five
+requires a positive determinant.  After division by the positive coalescence
+factor `h^20`, the values converge toward the negative derivative Wronskian.
+For example, at `h=0.0001`,
+
+```text
+det M = -1.0544596288e-67,
+det M / h^20 = -1.0544596288e13.
+```
+
+The calculation used 220 decimal digits and 16 theta summands.
+
+Therefore the square-tail kernel fails the numerical `RR5` test.  It also
+cannot be `RR6`, because `RR6` requires the correct compound-kernel signs at
+every rank from one through six.  The isolated rank-six determinant having the
+correct sign does not repair the rank-five failure.
+
+This is a high-confidence numerical counterexample, not yet an interval proof.
+The full record is in
+[`results/square-tail-wronskian-v1.json`](results/square-tail-wronskian-v1.json).
+
+The finite rank-six grid from the preceding section was therefore misleading:
+widely separated points can have the desired signs even when coalescing points
+expose a wrong Wronskian sign.  The square-tail kernel cannot be the desired
+all-rank positive carrier.
+
+## 5. What remains at rank four
 
 For an additive kernel, sign-regularity through rank `r` can be reduced to the
 signs of the two-way Wronskians
@@ -173,23 +220,27 @@ signs of the two-way Wronskians
 W_p(t) = det[K^(i+j-2)(t)]_(i,j=1,...,p),  p=1,...,r.
 ```
 
-The next serious experiment is interval-certified evaluation of these
-Wronskians through rank six on `t >= 0`, using
+The rank-four Wronskian had the correct sign at every sampled point from
+`t=0.000001` through `t=0.5`, using
 
 ```text
 K'(t) = -Phi(sqrt(t))/2
 ```
 
-and the even Taylor expansion of `Phi` to remove the apparent singularities at
-`t=0`.  A single rigorously negative oriented Wronskian or additive minor kills
-the corresponding order.  A finite positive grid only prioritizes where to
-look; it never certifies the conjecture.
+but this does not prove its sign on all `t >= 0`.  The next worthwhile question
+is now narrower: certify or falsify `RR4`, and then determine whether a different
+number of cumulant integrations can raise the available order as in Nuttall's
+program.  The one-fold square-tail kernel should no longer be treated as an
+all-rank candidate.
 
 ## Reproduce
 
 ```bash
 .venv/bin/python experiments/positive-grassmannian/rank_two_transport.py \
   --output experiments/positive-grassmannian/results/rank-two-transport-v1.json
+
+.venv/bin/python experiments/positive-grassmannian/wronskian_counterexample.py \
+  --output experiments/positive-grassmannian/results/square-tail-wronskian-v1.json
 ```
 
 ## Primary sources

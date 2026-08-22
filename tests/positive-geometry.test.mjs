@@ -52,3 +52,18 @@ test("rank-two transport records the fiber obstruction and finite sign-regular s
   );
   assert.ok(result.interpretationBoundary.some((line) => /not.*all minors/i.test(line)));
 });
+
+test("coalescing-point test falsifies square-tail rank five", async () => {
+  const result = await json("experiments/positive-grassmannian/results/square-tail-wronskian-v1.json");
+  assert.equal(result.schema, "riemann-lab.square-tail-wronskian-test.v1");
+  assert.equal(result.status, "high_precision_numeric_not_interval_certified");
+  assert.equal(result.rankSummary["4"].derivativeFailurePoints.length, 0);
+  assert.ok(result.rankSummary["5"].derivativeFailurePoints.includes("0.001"));
+  assert.deepEqual(
+    result.rankSummary["5"].directCounterexampleSteps,
+    ["0.0001", "0.00005", "0.00002", "0.00001"],
+  );
+  assert.equal(result.rankSummary["6"].directCounterexampleSteps.length, 0);
+  assert.ok(result.conclusion.some((line) => /cannot be RR6/i.test(line)));
+  assert.ok(result.interpretationBoundary.some((line) => /interval/i.test(line)));
+});

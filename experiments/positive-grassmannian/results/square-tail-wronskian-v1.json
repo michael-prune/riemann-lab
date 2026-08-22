@@ -1,0 +1,709 @@
+{
+  "schema": "riemann-lab.square-tail-wronskian-test.v1",
+  "status": "high_precision_numeric_not_interval_certified",
+  "kernel": "K(t)=integral_(sqrt(t))^infinity u*Phi(u)du",
+  "requiredSigns": {
+    "rank4": "positive",
+    "rank5": "positive",
+    "rank6": "negative"
+  },
+  "parameters": {
+    "derivativeDecimalPrecision": 120,
+    "directDecimalPrecision": 220,
+    "thetaTerms": 16,
+    "sweepRange": [
+      "0.000001",
+      "0.5"
+    ]
+  },
+  "rankSummary": {
+    "4": {
+      "derivativeFailurePoints": [],
+      "directCounterexampleSteps": [],
+      "passesFiniteSweep": true,
+      "passesDirectChecksAtCounterexample": true
+    },
+    "5": {
+      "derivativeFailurePoints": [
+        "0.000001",
+        "0.000003",
+        "0.00001",
+        "0.00003",
+        "0.0001",
+        "0.0003",
+        "0.001",
+        "0.003",
+        "0.01"
+      ],
+      "directCounterexampleSteps": [
+        "0.0001",
+        "0.00005",
+        "0.00002",
+        "0.00001"
+      ],
+      "passesFiniteSweep": false,
+      "passesDirectChecksAtCounterexample": false
+    },
+    "6": {
+      "derivativeFailurePoints": [],
+      "directCounterexampleSteps": [],
+      "passesFiniteSweep": true,
+      "passesDirectChecksAtCounterexample": true
+    }
+  },
+  "derivativeSweep": [
+    {
+      "t": "0.000001",
+      "ranks": [
+        {
+          "rank": 4,
+          "expectedWronskianSign": "positive",
+          "wronskian": "228083.2571759913465076326484117551406805",
+          "orientedWronskian": "228083.2571759913465076326484117551406805",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "expectedWronskianSign": "positive",
+          "wronskian": "-15800870459854.81467639029884377179985769",
+          "orientedWronskian": "-15800870459854.81467639029884377179985769",
+          "passes": false
+        },
+        {
+          "rank": 6,
+          "expectedWronskianSign": "negative",
+          "wronskian": "-6178967645956743961592985.617460689777631",
+          "orientedWronskian": "6178967645956743961592985.617460689777631",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.000003",
+      "ranks": [
+        {
+          "rank": 4,
+          "expectedWronskianSign": "positive",
+          "wronskian": "227997.7277026794329810101588152011247215",
+          "orientedWronskian": "227997.7277026794329810101588152011247215",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "expectedWronskianSign": "positive",
+          "wronskian": "-15791865424251.42776905916007528617166445",
+          "orientedWronskian": "-15791865424251.42776905916007528617166445",
+          "passes": false
+        },
+        {
+          "rank": 6,
+          "expectedWronskianSign": "negative",
+          "wronskian": "-6174912976973754325845742.683652177321359",
+          "orientedWronskian": "6174912976973754325845742.683652177321359",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.00001",
+      "ranks": [
+        {
+          "rank": 4,
+          "expectedWronskianSign": "positive",
+          "wronskian": "227698.6294617607756554872745244493210008",
+          "orientedWronskian": "227698.6294617607756554872745244493210008",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "expectedWronskianSign": "positive",
+          "wronskian": "-15760385392324.59592601005766413352866291",
+          "orientedWronskian": "-15760385392324.59592601005766413352866291",
+          "passes": false
+        },
+        {
+          "rank": 6,
+          "expectedWronskianSign": "negative",
+          "wronskian": "-6160743342699927639725240.827737869685415",
+          "orientedWronskian": "6160743342699927639725240.827737869685415",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.00003",
+      "ranks": [
+        {
+          "rank": 4,
+          "expectedWronskianSign": "positive",
+          "wronskian": "226846.2440138171777279402736433920698761",
+          "orientedWronskian": "226846.2440138171777279402736433920698761",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "expectedWronskianSign": "positive",
+          "wronskian": "-15670763900145.26568987191451019459746950",
+          "orientedWronskian": "-15670763900145.26568987191451019459746950",
+          "passes": false
+        },
+        {
+          "rank": 6,
+          "expectedWronskianSign": "negative",
+          "wronskian": "-6120444100127430554794725.581823895643533",
+          "orientedWronskian": "6120444100127430554794725.581823895643533",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.0001",
+      "ranks": [
+        {
+          "rank": 4,
+          "expectedWronskianSign": "positive",
+          "wronskian": "223888.1826401154963748301899665078350975",
+          "orientedWronskian": "223888.1826401154963748301899665078350975",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "expectedWronskianSign": "positive",
+          "wronskian": "-15360809241564.10545834031815805158377525",
+          "orientedWronskian": "-15360809241564.10545834031815805158377525",
+          "passes": false
+        },
+        {
+          "rank": 6,
+          "expectedWronskianSign": "negative",
+          "wronskian": "-5981535521204068555752993.977797317126978",
+          "orientedWronskian": "5981535521204068555752993.977797317126978",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.0003",
+      "ranks": [
+        {
+          "rank": 4,
+          "expectedWronskianSign": "positive",
+          "wronskian": "215649.3698808903896367434449483863610131",
+          "orientedWronskian": "215649.3698808903896367434449483863610131",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "expectedWronskianSign": "positive",
+          "wronskian": "-14506365085400.69601466212059712544901400",
+          "orientedWronskian": "-14506365085400.69601466212059712544901400",
+          "passes": false
+        },
+        {
+          "rank": 6,
+          "expectedWronskianSign": "negative",
+          "wronskian": "-5602374057792012856921148.586029465991933",
+          "orientedWronskian": "5602374057792012856921148.586029465991933",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.001",
+      "ranks": [
+        {
+          "rank": 4,
+          "expectedWronskianSign": "positive",
+          "wronskian": "189148.6809212969498725251681562234232512",
+          "orientedWronskian": "189148.6809212969498725251681562234232512",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "expectedWronskianSign": "positive",
+          "wronskian": "-11851429664461.98919621396246702817057699",
+          "orientedWronskian": "-11851429664461.98919621396246702817057699",
+          "passes": false
+        },
+        {
+          "rank": 6,
+          "expectedWronskianSign": "negative",
+          "wronskian": "-4460186750580477426820821.135943126556880",
+          "orientedWronskian": "4460186750580477426820821.135943126556880",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.003",
+      "ranks": [
+        {
+          "rank": 4,
+          "expectedWronskianSign": "positive",
+          "wronskian": "130161.0211608322632106526604904551471807",
+          "orientedWronskian": "130161.0211608322632106526604904551471807",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "expectedWronskianSign": "positive",
+          "wronskian": "-6541088810892.573950940642040257097056227",
+          "orientedWronskian": "-6541088810892.573950940642040257097056227",
+          "passes": false
+        },
+        {
+          "rank": 6,
+          "expectedWronskianSign": "negative",
+          "wronskian": "-2347443950778967297262846.510010336518237",
+          "orientedWronskian": "2347443950778967297262846.510010336518237",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.01",
+      "ranks": [
+        {
+          "rank": 4,
+          "expectedWronskianSign": "positive",
+          "wronskian": "35485.03450655958652288848031922015502759",
+          "orientedWronskian": "35485.03450655958652288848031922015502759",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "expectedWronskianSign": "positive",
+          "wronskian": "-606065167055.7924905092100016575345129769",
+          "orientedWronskian": "-606065167055.7924905092100016575345129769",
+          "passes": false
+        },
+        {
+          "rank": 6,
+          "expectedWronskianSign": "negative",
+          "wronskian": "-268785122560977241474807.4549265962659505",
+          "orientedWronskian": "268785122560977241474807.4549265962659505",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.02",
+      "ranks": [
+        {
+          "rank": 4,
+          "expectedWronskianSign": "positive",
+          "wronskian": "5604.800851118184412985762479206757481813",
+          "orientedWronskian": "5604.800851118184412985762479206757481813",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "expectedWronskianSign": "positive",
+          "wronskian": "31354351388.52712855267055005361116415195",
+          "orientedWronskian": "31354351388.52712855267055005361116415195",
+          "passes": true
+        },
+        {
+          "rank": 6,
+          "expectedWronskianSign": "negative",
+          "wronskian": "-13128186692640198992357.89830936282589993",
+          "orientedWronskian": "13128186692640198992357.89830936282589993",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.03",
+      "ranks": [
+        {
+          "rank": 4,
+          "expectedWronskianSign": "positive",
+          "wronskian": "877.5450945756990417581764456967210642843",
+          "orientedWronskian": "877.5450945756990417581764456967210642843",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "expectedWronskianSign": "positive",
+          "wronskian": "9724923948.200280822644033974157795797980",
+          "orientedWronskian": "9724923948.200280822644033974157795797980",
+          "passes": true
+        },
+        {
+          "rank": 6,
+          "expectedWronskianSign": "negative",
+          "wronskian": "-633780207537551667183.9809710207732812059",
+          "orientedWronskian": "633780207537551667183.9809710207732812059",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.05",
+      "ranks": [
+        {
+          "rank": 4,
+          "expectedWronskianSign": "positive",
+          "wronskian": "19.40237002817378079492266049928143932681",
+          "orientedWronskian": "19.40237002817378079492266049928143932681",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "expectedWronskianSign": "positive",
+          "wronskian": "142047047.1562024551402946773064193129373",
+          "orientedWronskian": "142047047.1562024551402946773064193129373",
+          "passes": true
+        },
+        {
+          "rank": 6,
+          "expectedWronskianSign": "negative",
+          "wronskian": "-1433634178828833599.547741763546748845592",
+          "orientedWronskian": "1433634178828833599.547741763546748845592",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.07",
+      "ranks": [
+        {
+          "rank": 4,
+          "expectedWronskianSign": "positive",
+          "wronskian": "0.3486197126369671477386373890408445594420",
+          "orientedWronskian": "0.3486197126369671477386373890408445594420",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "expectedWronskianSign": "positive",
+          "wronskian": "1097086.131534565001916034169215874960714",
+          "orientedWronskian": "1097086.131534565001916034169215874960714",
+          "passes": true
+        },
+        {
+          "rank": 6,
+          "expectedWronskianSign": "negative",
+          "wronskian": "-3180825060287653.660535082655095806112494",
+          "orientedWronskian": "3180825060287653.660535082655095806112494",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.1",
+      "ranks": [
+        {
+          "rank": 4,
+          "expectedWronskianSign": "positive",
+          "wronskian": "0.0005292234841586240051586831707275518486821",
+          "orientedWronskian": "0.0005292234841586240051586831707275518486821",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "expectedWronskianSign": "positive",
+          "wronskian": "370.8313527525247458788961286708166559559",
+          "orientedWronskian": "370.8313527525247458788961286708166559559",
+          "passes": true
+        },
+        {
+          "rank": 6,
+          "expectedWronskianSign": "negative",
+          "wronskian": "-218661122233.4941494720749340923521675489",
+          "orientedWronskian": "218661122233.4941494720749340923521675489",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.15",
+      "ranks": [
+        {
+          "rank": 4,
+          "expectedWronskianSign": "positive",
+          "wronskian": "0.000000002804967934635697542591421921055212571765",
+          "orientedWronskian": "0.000000002804967934635697542591421921055212571765",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "expectedWronskianSign": "positive",
+          "wronskian": "0.0001108629184154829114601140916302488877544",
+          "orientedWronskian": "0.0001108629184154829114601140916302488877544",
+          "passes": true
+        },
+        {
+          "rank": 6,
+          "expectedWronskianSign": "negative",
+          "wronskian": "-3876.409235053772882117126353277700476135",
+          "orientedWronskian": "3876.409235053772882117126353277700476135",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.2",
+      "ranks": [
+        {
+          "rank": 4,
+          "expectedWronskianSign": "positive",
+          "wronskian": "2.529532885350401878092524069150494278649e-15",
+          "orientedWronskian": "2.529532885350401878092524069150494278649e-15",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "expectedWronskianSign": "positive",
+          "wronskian": "0.000000000003620589087304897294727527621784705767176",
+          "orientedWronskian": "0.000000000003620589087304897294727527621784705767176",
+          "passes": true
+        },
+        {
+          "rank": 6,
+          "expectedWronskianSign": "negative",
+          "wronskian": "-0.000004899639854667856649169816940285170546855",
+          "orientedWronskian": "0.000004899639854667856649169816940285170546855",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.3",
+      "ranks": [
+        {
+          "rank": 4,
+          "expectedWronskianSign": "positive",
+          "wronskian": "6.169120660485517773614142867686400611584e-30",
+          "orientedWronskian": "6.169120660485517773614142867686400611584e-30",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "expectedWronskianSign": "positive",
+          "wronskian": "2.722971127323254192282368967896736569953e-30",
+          "orientedWronskian": "2.722971127323254192282368967896736569953e-30",
+          "passes": true
+        },
+        {
+          "rank": 6,
+          "expectedWronskianSign": "negative",
+          "wronskian": "-1.298568945893612882367440260779975214671e-27",
+          "orientedWronskian": "1.298568945893612882367440260779975214671e-27",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.5",
+      "ranks": [
+        {
+          "rank": 4,
+          "expectedWronskianSign": "positive",
+          "wronskian": "5.740268551581033291023422702766171630508e-71",
+          "orientedWronskian": "5.740268551581033291023422702766171630508e-71",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "expectedWronskianSign": "positive",
+          "wronskian": "2.686039667845141371070300994503006689718e-81",
+          "orientedWronskian": "2.686039667845141371070300994503006689718e-81",
+          "passes": true
+        },
+        {
+          "rank": 6,
+          "expectedWronskianSign": "negative",
+          "wronskian": "-1.764521546276446491870411907127285193478e-88",
+          "orientedWronskian": "1.764521546276446491870411907127285193478e-88",
+          "passes": true
+        }
+      ]
+    }
+  ],
+  "directNearbyPointChecks": [
+    {
+      "t": "0.001",
+      "h": "0.0001",
+      "xPoints": [
+        "0.0",
+        "0.000100000000000",
+        "0.000200000000000",
+        "0.000300000000000",
+        "0.000400000000000",
+        "0.000500000000000"
+      ],
+      "yPoints": [
+        "0.00100000000000",
+        "0.00110000000000",
+        "0.00120000000000",
+        "0.00130000000000",
+        "0.00140000000000",
+        "0.00150000000000"
+      ],
+      "ranks": [
+        {
+          "rank": 4,
+          "determinant": "1.788205441905436073591713916046546041846e-43",
+          "orientedDeterminant": "1.788205441905436073591713916046546041846e-43",
+          "orientedDividedByCoalescenceScale": "178820.5441905436073591713916046546041846",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "determinant": "-1.054459628844938271183971920980637964889e-67",
+          "orientedDeterminant": "-1.054459628844938271183971920980637964889e-67",
+          "orientedDividedByCoalescenceScale": "-10544596288449.38271183971920980637964889",
+          "passes": false
+        },
+        {
+          "rank": 6,
+          "determinant": "-3.793942301704382971422636067664515315692e-96",
+          "orientedDeterminant": "3.793942301704382971422636067664515315692e-96",
+          "orientedDividedByCoalescenceScale": "3793942301704382971422636.067664515315692",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.001",
+      "h": "0.00005",
+      "xPoints": [
+        "0.0",
+        "5.00000000000e-5",
+        "0.000100000000000",
+        "0.000150000000000",
+        "0.000200000000000",
+        "0.000250000000000"
+      ],
+      "yPoints": [
+        "0.00100000000000",
+        "0.00105000000000",
+        "0.00110000000000",
+        "0.00115000000000",
+        "0.00120000000000",
+        "0.00125000000000"
+      ],
+      "ranks": [
+        {
+          "rank": 4,
+          "determinant": "4.490031827573654124946215495604320662250e-47",
+          "orientedDeterminant": "4.490031827573654124946215495604320662250e-47",
+          "orientedDividedByCoalescenceScale": "183911.7036574168729577969866999529743258",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "determinant": "-1.066239737854486487881545413650392819641e-73",
+          "orientedDeterminant": "-1.066239737854486487881545413650392819641e-73",
+          "orientedDividedByCoalescenceScale": "-11180333993605.06023516879363663874301248",
+          "passes": false
+        },
+        {
+          "rank": 6,
+          "determinant": "-3.830690131215906132568178156568787391883e-105",
+          "orientedDeterminant": "3.830690131215906132568178156568787391883e-105",
+          "orientedDividedByCoalescenceScale": "4113172208670566388596541.418191127355629",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.001",
+      "h": "0.00002",
+      "xPoints": [
+        "0.0",
+        "2.00000000000e-5",
+        "4.00000000000e-5",
+        "6.00000000000e-5",
+        "8.00000000000e-5",
+        "0.000100000000000"
+      ],
+      "yPoints": [
+        "0.00100000000000",
+        "0.00102000000000",
+        "0.00104000000000",
+        "0.00106000000000",
+        "0.00108000000000",
+        "0.00110000000000"
+      ],
+      "ranks": [
+        {
+          "rank": 4,
+          "determinant": "7.660999681119862971218218500407880009720e-52",
+          "orientedDeterminant": "7.660999681119862971218218500407880009720e-52",
+          "orientedDividedByCoalescenceScale": "187036.1250273404045707572876076142580498",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "determinant": "-1.214107779107408679998288197035171314999e-81",
+          "orientedDeterminant": "-1.214107779107408679998288197035171314999e-81",
+          "orientedDividedByCoalescenceScale": "-11578634062837.68348692215153727694811820",
+          "passes": false
+        },
+        {
+          "rank": 6,
+          "determinant": "-4.636299930382408133928846772356380649524e-117",
+          "orientedDeterminant": "4.636299930382408133928846772356380649524e-117",
+          "orientedDividedByCoalescenceScale": "4317890787853308146753205.705765989282656",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "t": "0.001",
+      "h": "0.00001",
+      "xPoints": [
+        "0.0",
+        "1.00000000000e-5",
+        "2.00000000000e-5",
+        "3.00000000000e-5",
+        "4.00000000000e-5",
+        "5.00000000000e-5"
+      ],
+      "yPoints": [
+        "0.00100000000000",
+        "0.00101000000000",
+        "0.00102000000000",
+        "0.00103000000000",
+        "0.00104000000000",
+        "0.00105000000000"
+      ],
+      "ranks": [
+        {
+          "rank": 4,
+          "determinant": "1.880894196166801022664975915125938039286e-55",
+          "orientedDeterminant": "1.880894196166801022664975915125938039286e-55",
+          "orientedDividedByCoalescenceScale": "188089.4196166801022664975915125938039286",
+          "passes": true
+        },
+        {
+          "rank": 5,
+          "determinant": "-1.171429591283664064897129730968947269639e-87",
+          "orientedDeterminant": "-1.171429591283664064897129730968947269639e-87",
+          "orientedDividedByCoalescenceScale": "-11714295912836.64064897129730968947269639",
+          "passes": false
+        },
+        {
+          "rank": 6,
+          "determinant": "-4.388443546438836287871819857673008632473e-126",
+          "orientedDeterminant": "4.388443546438836287871819857673008632473e-126",
+          "orientedDividedByCoalescenceScale": "4388443546438836287871819.857673008632473",
+          "passes": true
+        }
+      ]
+    }
+  ],
+  "conclusion": [
+    "Rank four had the required sign at every sampled Wronskian and direct-minor point; this is not a global proof.",
+    "Rank five has the wrong sign near t=0.001 in both the derivative Wronskian and actual nearby-point minors.",
+    "The square-tail kernel therefore fails the numerical RR5 test and cannot be RR6, because RR6 includes all lower ranks.",
+    "The isolated rank-six determinant had its expected sign at the tested points, but that does not repair the rank-five failure."
+  ],
+  "interpretationBoundary": [
+    "mpmath does not provide interval enclosures.",
+    "A formal disproof should replace the counterexample calculation with certified ball arithmetic and theta-tail bounds.",
+    "No finite sweep can establish the global rank-four sign on t>=0."
+  ]
+}

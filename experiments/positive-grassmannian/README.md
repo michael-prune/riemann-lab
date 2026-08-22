@@ -123,9 +123,9 @@ Toeplitz total-positivity criterion and hence RH.
 The [rank-two transport calibration](rank-two-transport.md) shows that a pairing
 confined to fixed `uv` fibers cannot work: some complete fibers have negative
 mass. It also reconstructs the classical Turan proof as a beta-simplex followed
-by continuous Cauchy-Binet cancellation over an ordered chamber. The higher-rank
-target is now the square-tail cumulative kernel and an exact, non-circular
-composition back to the xi Toeplitz minors.
+by continuous Cauchy-Binet cancellation over an ordered chamber. A follow-up
+coalescing-point test falsifies the one-fold square-tail kernel at rank five, so
+it cannot provide the required all-rank carrier.
 
 ## Baseline experiment
 
@@ -184,8 +184,8 @@ Stop or reclassify a proposed construction if any of these occurs:
 
 ## Next proof attempts
 
-1. Interval-test the two-way Wronskians of the square-tail kernel through rank
-   six; one wrong sign kills the corresponding sign-regularity conjecture.
+1. Interval-certify the rank-five square-tail counterexample and determine
+   whether its rank-four Wronskian remains correctly signed on all `t >= 0`.
 2. Express rank-three permutation chambers over the common `6k`-dimensional
    simplex fiber and test whether an LGV-style crossing swap preserves the
    theta weight.
