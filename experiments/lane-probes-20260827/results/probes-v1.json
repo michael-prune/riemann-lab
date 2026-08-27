@@ -1,0 +1,415 @@
+{
+  "schema": "riemann-lab.lane-probes.v1",
+  "date": "2026-08-27",
+  "claimLevel": "checked_artifact",
+  "probes": {
+    "weilFiniteCompression": {
+      "lane": "explicit-formula-zero-density",
+      "question": "Can window or bandwidth rescaling improve the new finite-compression certificate?",
+      "quadraturePoints": 96,
+      "windowFunctional": "R(psi)=(int psi^2 + double_int |u-v| psi(u)psi(v))/(int psi)^2",
+      "numericMinimumR": "1.32746766393655569",
+      "theoreticalMontgomeryTaylorR": "1.3274992963205885",
+      "relativeError": "2.38285505088283318e-05",
+      "simpleZeroCertificate": "0.672532336063444314",
+      "minimumSampledOptimizerValue": "0.827622911994940091",
+      "relativeL2ShapeErrorAgainstNormalizedCosine": "1.55674021776049789e-05",
+      "bandwidthRescaling": {
+        "formula": "H(lambda)=2-1/lambda-lambda/3 for 0<lambda<=1",
+        "bestSampledLambda": "1",
+        "bestSampledCertificate": "0.666666666666666741"
+      },
+      "publishedBandwidthOneCeiling": "0.6818287",
+      "outcome": "closed_within_first_two_moments_and_bandwidth_one",
+      "interpretation": [
+        "The discretized global minimizer reproduces the Montgomery-Taylor cosine window.",
+        "Bandwidth shortening does not improve the flat-window certificate.",
+        "A material advance needs information beyond the first two bandwidth-one trace moments, such as wider-support pair correlation or rigorously available higher moments."
+      ]
+    },
+    "xiToeplitzFrontier": {
+      "lane": "positivity-equivalent-criteria",
+      "question": "Do consecutive xi Toeplitz minors exhibit a backward-propagating exchange inequality?",
+      "status": "high_precision_numeric_not_interval_certified",
+      "parameters": {
+        "decimalPrecision": 90,
+        "thetaTerms": 16,
+        "maxCoefficient": 54,
+        "ranks": [
+          2,
+          9
+        ],
+        "maximumShift": 44
+      },
+      "exchangeRatio": "Q_(r,k)=D_(r,k)D_(r-2,k)/(D_(r-1,k-1)D_(r-1,k+1))",
+      "lowerRankIdentity": "Q_(r,k)=D_(r-1,k)^2/(D_(r-1,k-1)D_(r-1,k+1))-1",
+      "candidateInequality": "Q_(r,k+1)<Q_(r,k) for every r>=2 and admissible k",
+      "rankResults": [
+        {
+          "rank": 2,
+          "shiftRange": [
+            1,
+            44
+          ],
+          "firstRatio": "1.14968788500038842",
+          "lastRatio": "0.0331459795205119606",
+          "allPositive": true,
+          "strictlyDecreasing": true,
+          "smallestDecrease": "0.000724941893586428356"
+        },
+        {
+          "rank": 3,
+          "shiftRange": [
+            1,
+            44
+          ],
+          "firstRatio": "2.54657225141572970",
+          "lastRatio": "0.0669096680614710182",
+          "allPositive": true,
+          "strictlyDecreasing": true,
+          "smallestDecrease": "0.00147593967350811608"
+        },
+        {
+          "rank": 4,
+          "shiftRange": [
+            2,
+            44
+          ],
+          "firstRatio": "2.11568590164419331",
+          "lastRatio": "0.101303475849666086",
+          "allPositive": true,
+          "strictlyDecreasing": true,
+          "smallestDecrease": "0.00225379129518369758"
+        },
+        {
+          "rank": 5,
+          "shiftRange": [
+            3,
+            44
+          ],
+          "firstRatio": "2.01118333799521781",
+          "lastRatio": "0.136340103470495329",
+          "allPositive": true,
+          "strictlyDecreasing": true,
+          "smallestDecrease": "0.00305931933261903162"
+        },
+        {
+          "rank": 6,
+          "shiftRange": [
+            4,
+            44
+          ],
+          "firstRatio": "1.97844535769633462",
+          "lastRatio": "0.172032550110283510",
+          "allPositive": true,
+          "strictlyDecreasing": true,
+          "smallestDecrease": "0.00389337190298610159"
+        },
+        {
+          "rank": 7,
+          "shiftRange": [
+            5,
+            44
+          ],
+          "firstRatio": "1.97165211836916505",
+          "lastRatio": "0.208394121964211715",
+          "allPositive": true,
+          "strictlyDecreasing": true,
+          "smallestDecrease": "0.00475682361028636097"
+        },
+        {
+          "rank": 8,
+          "shiftRange": [
+            6,
+            44
+          ],
+          "firstRatio": "1.97614869126548292",
+          "lastRatio": "0.245438440824701898",
+          "allPositive": true,
+          "strictlyDecreasing": true,
+          "smallestDecrease": "0.00565057651074142097"
+        },
+        {
+          "rank": 9,
+          "shiftRange": [
+            7,
+            44
+          ],
+          "firstRatio": "1.98594637141555042",
+          "lastRatio": "0.283179452864203782",
+          "allPositive": true,
+          "strictlyDecreasing": true,
+          "smallestDecrease": "0.00657556110234986439"
+        }
+      ],
+      "maximumRelativeDesnanotJacobiMismatch": "1.07822431957482338e-80",
+      "pfInfinityControl": {
+        "construction": "coefficients of product_(j=1)^70 (1+z/root_j), root_j=10^U_j, U_j uniform[-2,2] with seed 0",
+        "allZerosNegativeReal": true,
+        "firstMonotonicityViolations": [
+          {
+            "rank": 2,
+            "leftShift": 33,
+            "leftRatio": "0.121813344746699057",
+            "rightShift": 34,
+            "rightRatio": "0.121884158301296615"
+          },
+          {
+            "rank": 3,
+            "leftShift": 33,
+            "leftRatio": "0.256805670257031476",
+            "rightShift": 34,
+            "rightRatio": "0.257067815600858859"
+          },
+          {
+            "rank": 4,
+            "leftShift": 33,
+            "leftRatio": "0.406197559561902862",
+            "rightShift": 34,
+            "rightRatio": "0.406804830208906902"
+          },
+          {
+            "rank": 5,
+            "leftShift": 33,
+            "leftRatio": "0.571297194647713199",
+            "rightShift": 34,
+            "rightRatio": "0.572439037681968298"
+          },
+          {
+            "rank": 6,
+            "leftShift": 32,
+            "leftRatio": "0.753308015286670508",
+            "rightShift": 33,
+            "rightRatio": "0.753506198327426329"
+          },
+          {
+            "rank": 7,
+            "leftShift": 32,
+            "leftRatio": "0.953786066750242751",
+            "rightShift": 33,
+            "rightRatio": "0.954326483767517020"
+          },
+          {
+            "rank": 8,
+            "leftShift": 32,
+            "leftRatio": "1.17435494367517207",
+            "rightShift": 33,
+            "rightRatio": "1.17536825190150893"
+          }
+        ]
+      },
+      "outcome": "candidate_survives_sample_and_is_not_generic_pf_infinity",
+      "interpretation": [
+        "Every sampled xi exchange ratio was positive and strictly decreasing in the shift.",
+        "If this held uniformly, the proved positive cubic tail would propagate backward to every consecutive minor.",
+        "Seeded negative-real-root polynomial controls violate the monotonicity, so it is not a generic consequence of total positivity.",
+        "The finite xi sample is already covered by known finite-order positivity and is discovery evidence only."
+      ]
+    },
+    "deBruijnNewmanHeatFlow": {
+      "lane": "de-bruijn-newman-heat-flow",
+      "question": "Can a pointwise adjacent-gap repulsion barrier prevent backward zero collisions?",
+      "status": "finite_truncated_numeric_not_interval_certified",
+      "zeroDynamics": "gamma_j'(t)=2 sum'_(k!=j) 1/(gamma_j-gamma_k)",
+      "cutoffs": [
+        {
+          "zeroCutoff": 40,
+          "gapIndexRange": [
+            10,
+            30
+          ],
+          "negativeDerivativeCount": 12,
+          "positiveDerivativeCount": 9,
+          "minimumDerivative": "-1.87699247357030180",
+          "maximumDerivative": "2.37249611685681205",
+          "negativeGapIndices": [
+            1,
+            3,
+            5,
+            8,
+            10,
+            11,
+            12,
+            14,
+            18,
+            21,
+            23,
+            25,
+            26,
+            28,
+            29,
+            30,
+            33,
+            35,
+            37,
+            38
+          ]
+        },
+        {
+          "zeroCutoff": 70,
+          "gapIndexRange": [
+            10,
+            30
+          ],
+          "negativeDerivativeCount": 12,
+          "positiveDerivativeCount": 9,
+          "minimumDerivative": "-1.92784926815970836",
+          "maximumDerivative": "2.34289012733542978",
+          "negativeGapIndices": [
+            1,
+            3,
+            5,
+            8,
+            10,
+            11,
+            12,
+            14,
+            18,
+            21,
+            23,
+            25,
+            26,
+            28,
+            29,
+            30,
+            33,
+            35,
+            37,
+            38
+          ]
+        },
+        {
+          "zeroCutoff": 100,
+          "gapIndexRange": [
+            10,
+            30
+          ],
+          "negativeDerivativeCount": 12,
+          "positiveDerivativeCount": 9,
+          "minimumDerivative": "-1.94656424481602168",
+          "maximumDerivative": "2.33625456463201326",
+          "negativeGapIndices": [
+            1,
+            3,
+            5,
+            8,
+            10,
+            11,
+            12,
+            14,
+            18,
+            21,
+            23,
+            25,
+            26,
+            28,
+            29,
+            30,
+            33,
+            35,
+            37,
+            38
+          ]
+        }
+      ],
+      "allGapSignsStableAcrossCutoffs": true,
+      "outcome": "naive_pointwise_gap_barrier_falsified",
+      "interpretation": [
+        "Both signs occur: forward heat flow widens some adjacent gaps and shrinks others.",
+        "The signs for gaps 10 through 30 agree under 40-, 70-, and 100-positive-zero truncations.",
+        "Pairwise repulsion does not imply pointwise widening because the rest of the zero configuration can dominate a given gap.",
+        "A viable no-collision argument must use a collective or averaged energy with a controlled infinite tail."
+      ]
+    },
+    "nymanBeurlingGram": {
+      "lane": "nyman-beurling-gram-geometry",
+      "question": "Does natural diagonal preconditioning remove the Gram instability?",
+      "status": "double_precision_exact_formula_evaluation",
+      "basis": "rho_k(t)={1/(k t)}, k=1,...,N",
+      "gramFormula": "G_(k,l)=A(l/k)/l with A from the rational Vasyunin-sum formula",
+      "targetFormula": "b_k=(log(k)+1-EulerGamma)/k",
+      "records": [
+        {
+          "size": 5,
+          "rawConditionNumber": "82.7669173306129551",
+          "diagonalScaledConditionNumber": "52.4233473556064595",
+          "distanceSquared": "0.0361015998186049458",
+          "logNDistanceSquared": "0.0581032834475868343",
+          "coefficientL2Norm": "1.73026777776708451"
+        },
+        {
+          "size": 10,
+          "rawConditionNumber": "329.425161952887038",
+          "diagonalScaledConditionNumber": "145.417232581886623",
+          "distanceSquared": "0.0237718655560390513",
+          "logNDistanceSquared": "0.0547367432619941321",
+          "coefficientL2Norm": "1.87748282397774857"
+        },
+        {
+          "size": 20,
+          "rawConditionNumber": "1352.51006638331091",
+          "diagonalScaledConditionNumber": "530.993904220965305",
+          "distanceSquared": "0.0165035830710300591",
+          "logNDistanceSquared": "0.0494403164351640348",
+          "coefficientL2Norm": "2.20701632738038489"
+        },
+        {
+          "size": 40,
+          "rawConditionNumber": "5656.75904477563836",
+          "diagonalScaledConditionNumber": "1983.11399526533751",
+          "distanceSquared": "0.01271519719533587",
+          "logNDistanceSquared": "0.0469048296888816343",
+          "coefficientL2Norm": "2.78629370086136152"
+        },
+        {
+          "size": 80,
+          "rawConditionNumber": "24452.8936318710803",
+          "diagonalScaledConditionNumber": "7535.3370945392644",
+          "distanceSquared": "0.0109834815525395868",
+          "logNDistanceSquared": "0.0481299087046777041",
+          "coefficientL2Norm": "3.34488513220936534"
+        },
+        {
+          "size": 160,
+          "rawConditionNumber": "98586.8004143951839",
+          "diagonalScaledConditionNumber": "28938.1976529322965",
+          "distanceSquared": "0.00934559100856768854",
+          "logNDistanceSquared": "0.0474304987745674186",
+          "coefficientL2Norm": "4.18663516201338926"
+        },
+        {
+          "size": 320,
+          "rawConditionNumber": "393644.528533724719",
+          "diagonalScaledConditionNumber": "105455.612914753699",
+          "distanceSquared": "0.00795373743117855359",
+          "logNDistanceSquared": "0.0458797106192980753",
+          "coefficientL2Norm": "5.46198266719376146"
+        }
+      ],
+      "logLogFit": {
+        "rawConditionPower": "2.04935674430201553",
+        "diagonalScaledConditionPower": "1.91345852958895657",
+        "fitSizes": [
+          20,
+          40,
+          80,
+          160,
+          320
+        ]
+      },
+      "outcome": "diagonal_scaling_improves_constant_not_growth_order",
+      "interpretation": [
+        "The minimum approximation distance decreases steadily and log(N)*distance^2 is nearly flat over the larger samples.",
+        "Unit-diagonal scaling reduces the condition number by a constant factor but retains approximately quadratic growth.",
+        "A useful preconditioner must exploit more than basis norms, probably the Mellin or block-Hankel structure.",
+        "The calculation reallocates rather than resolves the coefficient-control difficulty in the Nyman-Beurling criterion."
+      ]
+    }
+  },
+  "globalBoundary": [
+    "No probe proves RH or a new general theorem.",
+    "The Toeplitz and heat-flow calculations are non-interval numerical experiments.",
+    "The Nyman-Beurling calculation evaluates exact finite formulas in double precision.",
+    "The Weil-window probe reproduces a published variational optimum and method ceiling."
+  ]
+}

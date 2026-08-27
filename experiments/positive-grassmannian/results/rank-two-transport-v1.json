@@ -1,0 +1,183 @@
+{
+  "schema": "riemann-lab.rank-two-transport.v1",
+  "status": "high_precision_numeric_not_interval_certified",
+  "parameters": {
+    "decimalPrecision": 60,
+    "thetaTerms": 14,
+    "fiberCutoff": 12,
+    "squareTailUpperCutoff": 2
+  },
+  "identities": {
+    "squareTail": "K(t)=integral_(sqrt(t))^infinity u*Phi(u)du=(1/2)integral_t^infinity Phi(sqrt(v))dv",
+    "fixedProductFiber": "integral_R Phi(sqrt(x)e^(y/2))*Phi(sqrt(x)e^(-y/2))*(1-c_k*cosh(2y))dy",
+    "cK": "c_k=(2k)(2k-1)/((2k+1)(2k+2))"
+  },
+  "fixedProductFibers": [
+    {
+      "k": 1,
+      "x": "0.001",
+      "value": "-16.7395649035374449093692405825",
+      "sign": "negative"
+    },
+    {
+      "k": 1,
+      "x": "0.01",
+      "value": "0.0709110131330997116824888513321",
+      "sign": "positive"
+    },
+    {
+      "k": 2,
+      "x": "0.01",
+      "value": "-0.144116545766434215847180150296",
+      "sign": "negative"
+    },
+    {
+      "k": 2,
+      "x": "0.03",
+      "value": "0.00773748700099211678324862496899",
+      "sign": "positive"
+    },
+    {
+      "k": 3,
+      "x": "0.01",
+      "value": "-0.269183595330448847165457018590",
+      "sign": "negative"
+    },
+    {
+      "k": 3,
+      "x": "0.03",
+      "value": "0.00194856783436760045382287877857",
+      "sign": "positive"
+    },
+    {
+      "k": 5,
+      "x": "0.03",
+      "value": "-0.00428352217754874487689861831637",
+      "sign": "negative"
+    },
+    {
+      "k": 5,
+      "x": "0.1",
+      "value": "0.00000270820115776022811262370762108",
+      "sign": "positive"
+    }
+  ],
+  "fixedProductConclusion": "Both signs occur. A positivity proof cannot pair chambers while preserving x=uv fiber-by-fiber.",
+  "squareTailSignRegularity": {
+    "grid": [
+      "0.001",
+      "0.003",
+      "0.01",
+      "0.03",
+      "0.1",
+      "0.3"
+    ],
+    "kernelMatrix": [
+      [
+        "0.00495185403627914368585486649747",
+        "0.00455288895331545345380356600197",
+        "0.00337540846313426526178104052513",
+        "0.00137290680599307222312057385692",
+        "0.0000350131236978409225040387259481",
+        "7.64575914126999919290298272110e-12"
+      ],
+      [
+        "0.00455288895331545345380356600197",
+        "0.00418327522250435894058912355582",
+        "0.00309418592056512281196903951390",
+        "0.00125026321547234974454245831687",
+        "0.0000311500454981526046623974231491",
+        "6.29942307715321367507643094216e-12"
+      ],
+      [
+        "0.00337540846313426526178104052513",
+        "0.00309418592056512281196903951390",
+        "0.00227016537010849168652419799819",
+        "0.000896429754982849782401516336939",
+        "0.0000205784319986057982152124758898",
+        "3.17617230349209145514476706523e-12"
+      ],
+      [
+        "0.00137290680599307222312057385692",
+        "0.00125026321547234974454245831687",
+        "0.000896429754982849782401516336939",
+        "0.000331443152213119823821757140454",
+        "0.00000600777304428694253082871787871",
+        "4.23016318136508568119437968018e-13"
+      ],
+      [
+        "0.0000350131236978409225040387259481",
+        "0.0000311500454981526046623974231491",
+        "0.0000205784319986057982152124758898",
+        "0.00000600777304428694253082871787871",
+        "0.0000000459455659854510673116951732084",
+        "1.76778293051745921606087871258e-16"
+      ],
+      [
+        "7.64575914126999919290298272110e-12",
+        "6.29942307715321367507643094216e-12",
+        "3.17617230349209145514476706523e-12",
+        "4.23016318136508568119437968018e-13",
+        "1.76778293051745921606087871258e-16",
+        "3.38938762169951253058892528237e-29"
+      ]
+    ],
+    "ranks": [
+      {
+        "rank": 1,
+        "expectedSign": "positive",
+        "minorCount": 36,
+        "badSignCount": 0,
+        "minimumOrientedMinor": "3.38938762169951253058892528237e-29",
+        "badMinors": []
+      },
+      {
+        "rank": 2,
+        "expectedSign": "negative",
+        "minorCount": 225,
+        "badSignCount": 0,
+        "minimumOrientedMinor": "3.12490076209627297250219117739e-32",
+        "badMinors": []
+      },
+      {
+        "rank": 3,
+        "expectedSign": "negative",
+        "minorCount": 400,
+        "badSignCount": 0,
+        "minimumOrientedMinor": "7.33346319657085003147699709452e-33",
+        "badMinors": []
+      },
+      {
+        "rank": 4,
+        "expectedSign": "positive",
+        "minorCount": 225,
+        "badSignCount": 0,
+        "minimumOrientedMinor": "4.69563569501930997447555553943e-35",
+        "badMinors": []
+      },
+      {
+        "rank": 5,
+        "expectedSign": "positive",
+        "minorCount": 36,
+        "badSignCount": 0,
+        "minimumOrientedMinor": "8.19377778565976623383811286174e-41",
+        "badMinors": []
+      },
+      {
+        "rank": 6,
+        "expectedSign": "negative",
+        "minorCount": 1,
+        "badSignCount": 0,
+        "minimumOrientedMinor": "2.81990697507747122763573634469e-48",
+        "badMinors": []
+      }
+    ],
+    "totalMinorCount": 923,
+    "totalBadSignCount": 0
+  },
+  "interpretationBoundary": [
+    "The finite grid is not evidence that all minors at all points have the predicted sign.",
+    "mpmath does not provide interval enclosures.",
+    "Even global sign-regularity of this transformed kernel would still require a non-circular transfer to every xi Toeplitz minor."
+  ]
+}

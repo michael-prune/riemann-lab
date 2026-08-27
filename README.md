@@ -20,6 +20,10 @@ Start with [LAB_PROTOCOL.md](LAB_PROTOCOL.md),
 lanes are indexed in [lanes/index.json](lanes/index.json). Submissions must
 validate against [schemas/submission.v1.schema.json](schemas/submission.v1.schema.json).
 
+The first positive-geometry research packet is the
+[Xi positive geometry / Grassmannian attempt](experiments/positive-grassmannian/README.md),
+with a reproducible high-precision scan and explicit kill conditions.
+
 ## Lean starter
 
 The root Lean project is a small pinned Lean 4 project for controlled future contributions.

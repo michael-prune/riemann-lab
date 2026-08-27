@@ -1,0 +1,23 @@
+{
+  "schema": "riemann-lab.xi-exchange-ratio-independent-check.v1",
+  "status": "high_precision_numeric_not_interval_certified",
+  "parameters": {
+    "decimalPrecision": 140,
+    "thetaTerms": 18,
+    "maxCoefficient": 54,
+    "ranks": [2, 9],
+    "maximumShift": 44
+  },
+  "candidateInequality": "Q_(r,k+1)<Q_(r,k) for every r>=2 and admissible k",
+  "rankResults": [
+    {"rank": 2, "allPositive": true, "strictlyDecreasing": true, "lastRatio": "0.033145979520511960587906165921"},
+    {"rank": 3, "allPositive": true, "strictlyDecreasing": true, "lastRatio": "0.0669096680614710182172402146667"},
+    {"rank": 4, "allPositive": true, "strictlyDecreasing": true, "lastRatio": "0.101303475849666085840945413728"},
+    {"rank": 5, "allPositive": true, "strictlyDecreasing": true, "lastRatio": "0.136340103470495328931730217981"},
+    {"rank": 6, "allPositive": true, "strictlyDecreasing": true, "lastRatio": "0.172032550110283509675851195409"},
+    {"rank": 7, "allPositive": true, "strictlyDecreasing": true, "lastRatio": "0.208394121964211715030685163393"},
+    {"rank": 8, "allPositive": true, "strictlyDecreasing": true, "lastRatio": "0.245438440824701898296603582726"},
+    {"rank": 9, "allPositive": true, "strictlyDecreasing": true, "lastRatio": "0.283179452864203782093299603477"}
+  ],
+  "boundary": "Independent higher-precision numerical agreement is not an interval certificate or a theorem."
+}
