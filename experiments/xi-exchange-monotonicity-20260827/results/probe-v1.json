@@ -1,0 +1,309 @@
+{
+  "schema": "riemann-lab.xi-exchange-monotonicity-probe.v1",
+  "status": "high_precision_numeric_not_interval_certified",
+  "candidate": "Q_(r,k+1) < Q_(r,k), where Q_(r,k)=D_(r,k)D_(r-2,k)/(D_(r-1,k-1)D_(r-1,k+1))",
+  "parameters": {
+    "decimalPrecision": 130,
+    "thetaTerms": 18,
+    "maxCoefficient": 62,
+    "maxRank": 15,
+    "maxShift": 40
+  },
+  "finiteStress": [
+    {
+      "rank": 2,
+      "shiftRange": [
+        1,
+        40
+      ],
+      "firstRatio": "1.14968788500038842252692",
+      "lastRatio": "0.0362550310658717032437183",
+      "allPositive": true,
+      "strictlyDecreasing": true,
+      "minimumRelativeDecrease": "0.02351759062021084"
+    },
+    {
+      "rank": 3,
+      "shiftRange": [
+        1,
+        40
+      ],
+      "firstRatio": "2.54657225141572970441225",
+      "lastRatio": "0.0732430146454483673765159",
+      "allPositive": true,
+      "strictlyDecreasing": true,
+      "minimumRelativeDecrease": "0.02373032216016770"
+    },
+    {
+      "rank": 4,
+      "shiftRange": [
+        2,
+        40
+      ],
+      "firstRatio": "2.11568590164419330976675",
+      "lastRatio": "0.110980015626082644265560",
+      "allPositive": true,
+      "strictlyDecreasing": true,
+      "minimumRelativeDecrease": "0.02394513791018619"
+    },
+    {
+      "rank": 5,
+      "shiftRange": [
+        3,
+        40
+      ],
+      "firstRatio": "2.01118333799521780980150",
+      "lastRatio": "0.149482505531663198778651",
+      "allPositive": true,
+      "strictlyDecreasing": true,
+      "minimumRelativeDecrease": "0.02416205536324151"
+    },
+    {
+      "rank": 6,
+      "shiftRange": [
+        4,
+        40
+      ],
+      "firstRatio": "1.97844535769633462395021",
+      "lastRatio": "0.188767375330012369771537",
+      "allPositive": true,
+      "strictlyDecreasing": true,
+      "minimumRelativeDecrease": "0.02438109332474805"
+    },
+    {
+      "rank": 7,
+      "shiftRange": [
+        5,
+        40
+      ],
+      "firstRatio": "1.97165211836916504720759",
+      "lastRatio": "0.228851948499375629651368",
+      "allPositive": true,
+      "strictlyDecreasing": true,
+      "minimumRelativeDecrease": "0.02460227178257104"
+    },
+    {
+      "rank": 8,
+      "shiftRange": [
+        6,
+        40
+      ],
+      "firstRatio": "1.97614869126548291965073",
+      "lastRatio": "0.269753994383272389707117",
+      "allPositive": true,
+      "strictlyDecreasing": true,
+      "minimumRelativeDecrease": "0.02482561179487315"
+    },
+    {
+      "rank": 9,
+      "shiftRange": [
+        7,
+        40
+      ],
+      "firstRatio": "1.98594637141555042291291",
+      "lastRatio": "0.311491741860892280613423",
+      "allPositive": true,
+      "strictlyDecreasing": true,
+      "minimumRelativeDecrease": "0.02505113539305693"
+    },
+    {
+      "rank": 10,
+      "shiftRange": [
+        8,
+        40
+      ],
+      "firstRatio": "1.99830110525213824519733",
+      "lastRatio": "0.354083893358583613172172",
+      "allPositive": true,
+      "strictlyDecreasing": true,
+      "minimumRelativeDecrease": "0.02527886549752230"
+    },
+    {
+      "rank": 11,
+      "shiftRange": [
+        9,
+        40
+      ],
+      "firstRatio": "2.01184368029365563789706",
+      "lastRatio": "0.397549639226712078133070",
+      "allPositive": true,
+      "strictlyDecreasing": true,
+      "minimumRelativeDecrease": "0.02550882584433322"
+    },
+    {
+      "rank": 12,
+      "shiftRange": [
+        10,
+        40
+      ],
+      "firstRatio": "2.02584465388425646843110",
+      "lastRatio": "0.441908672505204702604668",
+      "allPositive": true,
+      "strictlyDecreasing": true,
+      "minimumRelativeDecrease": "0.02574104092119416"
+    },
+    {
+      "rank": 13,
+      "shiftRange": [
+        11,
+        40
+      ],
+      "firstRatio": "2.03990022264844438470176",
+      "lastRatio": "0.487181204100386056929394",
+      "allPositive": true,
+      "strictlyDecreasing": true,
+      "minimumRelativeDecrease": "0.02597553591138984"
+    },
+    {
+      "rank": 14,
+      "shiftRange": [
+        12,
+        40
+      ],
+      "firstRatio": "2.05378363531410344561561",
+      "lastRatio": "0.533387978395220039173836",
+      "allPositive": true,
+      "strictlyDecreasing": true,
+      "minimumRelativeDecrease": "0.02621233664455012"
+    },
+    {
+      "rank": 15,
+      "shiftRange": [
+        13,
+        40
+      ],
+      "firstRatio": "2.06736843025780660946552",
+      "lastRatio": "0.580550289314758462905159",
+      "allPositive": true,
+      "strictlyDecreasing": true,
+      "minimumRelativeDecrease": "0.02645146955327514"
+    }
+  ],
+  "continuousCurvature": [
+    {
+      "x": 1,
+      "logAThirdDerivative": "0.417534394990972307526427",
+      "logD2ThirdDerivative": "0.600061098641924919930196",
+      "centeredSecondDifferenceLogA": "-0.765322661834159674962931",
+      "momentLogSkewness": "-0.101922006945317032358673",
+      "gammaPolygamma2": "-0.154113806319188570799476"
+    },
+    {
+      "x": 2,
+      "logAThirdDerivative": "0.163321039520211339669419",
+      "logD2ThirdDerivative": "0.259010687882498364861719",
+      "centeredSecondDifferenceLogA": "-0.466319036593179355094528",
+      "momentLogSkewness": "-0.0283746023050880792667249",
+      "gammaPolygamma2": "-0.0487897322451144967254022"
+    },
+    {
+      "x": 3,
+      "logAThirdDerivative": "0.0867745817984877005758104",
+      "logD2ThirdDerivative": "0.145527736779050256684275",
+      "centeredSecondDifferenceLogA": "-0.340562271617541023103580",
+      "momentLogSkewness": "-0.0126836502610442748941667",
+      "gammaPolygamma2": "-0.0235304729858552374661430"
+    },
+    {
+      "x": 5,
+      "logAThirdDerivative": "0.0368825817487640365734263",
+      "logD2ThirdDerivative": "0.0656029306981430484295496",
+      "centeredSecondDifferenceLogA": "-0.224626456982989285142831",
+      "momentLogSkewness": "-0.00443951225220656289042546",
+      "gammaPolygamma2": "-0.00904983497080206746210375"
+    },
+    {
+      "x": 10,
+      "logAThirdDerivative": "0.0108059025406010438786576",
+      "logD2ThirdDerivative": "0.0202958931994920896512911",
+      "centeredSecondDifferenceLogA": "-0.124209051123942222180919",
+      "momentLogSkewness": "-0.00102738458473952410859401",
+      "gammaPolygamma2": "-0.00237812240231465459342621"
+    },
+    {
+      "x": 20,
+      "logAThirdDerivative": "0.00302342492960690598623300",
+      "logD2ThirdDerivative": "0.00585599972102795701754842",
+      "centeredSecondDifferenceLogA": "-0.0670822994288943164933325",
+      "momentLogSkewness": "-0.000231642155634435339477246",
+      "gammaPolygamma2": "-0.000609570271835298587756371"
+    },
+    {
+      "x": 40,
+      "logAThirdDerivative": "0.000822071207224555314367764",
+      "logD2ThirdDerivative": "0.00161806795239017787181455",
+      "centeredSecondDifferenceLogA": "-0.0356132825251806146514146",
+      "momentLogSkewness": "-0.0000515501804924970212469304",
+      "gammaPolygamma2": "-0.000154309081395566435542901"
+    },
+    {
+      "x": 80,
+      "logAThirdDerivative": "0.000219202583831863469533326",
+      "logD2ThirdDerivative": "0.000434961981621763801230670",
+      "centeredSecondDifferenceLogA": "-0.0186672169720322424657507",
+      "momentLogSkewness": "-0.0000114187993255364718695601",
+      "gammaPolygamma2": "-0.0000388191223045194055612258"
+    }
+  ],
+  "pfInfinityControl": {
+    "construction": "coefficients of product_(j=1)^70 (1+z/root_j), root_j=10^U_j, U_j uniform[-2,2] with seed 0",
+    "allZerosNegativeReal": true,
+    "firstMonotonicityViolations": [
+      {
+        "rank": 2,
+        "leftShift": 33,
+        "rightShift": 34,
+        "leftRatio": "0.121813344746699057296675",
+        "rightRatio": "0.121884158301296615179121"
+      },
+      {
+        "rank": 3,
+        "leftShift": 33,
+        "rightShift": 34,
+        "leftRatio": "0.256805670257031475546257",
+        "rightRatio": "0.257067815600858859077161"
+      },
+      {
+        "rank": 4,
+        "leftShift": 33,
+        "rightShift": 34,
+        "leftRatio": "0.406197559561902862028264",
+        "rightRatio": "0.406804830208906902376366"
+      },
+      {
+        "rank": 5,
+        "leftShift": 33,
+        "rightShift": 34,
+        "leftRatio": "0.571297194647713199246080",
+        "rightRatio": "0.572439037681968298093259"
+      },
+      {
+        "rank": 6,
+        "leftShift": 32,
+        "rightShift": 33,
+        "leftRatio": "0.753308015286670507610117",
+        "rightRatio": "0.753506198327426328644718"
+      },
+      {
+        "rank": 7,
+        "leftShift": 32,
+        "rightShift": 33,
+        "leftRatio": "0.953786066750242751009786",
+        "rightRatio": "0.954326483767517019968001"
+      },
+      {
+        "rank": 8,
+        "leftShift": 32,
+        "rightShift": 33,
+        "leftRatio": "1.17435494367517207492665",
+        "rightRatio": "1.17536825190150892686871"
+      }
+    ]
+  },
+  "claimBoundaries": [
+    "The finite and continuous calculations are non-interval numerical evidence.",
+    "Published all-orders coefficient asymptotics imply the rank-2 and rank-3 inequalities only for sufficiently large shift, with no effective threshold extracted here.",
+    "No checked classical Turan, double-Turan, or PF-infinity theorem implies the candidate globally.",
+    "Even a proof for every fixed rank in the tail would not resolve the RH-critical diagonal regime k comparable to r."
+  ]
+}
