@@ -1,0 +1,33 @@
+{
+  "schema": "riemann-lab.xi-rank-two-conditional-tail-certificate.v1",
+  "status": "checked_scalar_closure_conditional_on_unreplayed_source_lemmas",
+  "conclusion": "f'''(x)>0 for every real x>=1e9, conditional on the source-stated analytic bounds",
+  "discreteConsequence": "Q_(2,k+1)<Q_(2,k) for every integer k>=1000000001, under the same hypotheses",
+  "sourceHypotheses": {
+    "thetaRemainderSupremum": "[1.10000000000000000000000000000e-14 +/- 1e-48]",
+    "fullSaddleAnalyticity": "arXiv:2607.16795, Lemma 3.3",
+    "uniformFactorization": "arXiv:2607.16795, Lemma 3.6",
+    "factorizationRelativeError": "0.018",
+    "curvatureSector": "6/sigma_n^2 <= |-Psi''| <= 20/sigma_n^2 in the right half-plane"
+  },
+  "arbPrecisionBits": 256,
+  "constants": {
+    "logRemainderBound": "[1.10000000000000605000000000004e-14 +/- 4.37e-44]",
+    "HAtPoint98": "[312.156206046805943724423514826 +/- 3.78e-28]",
+    "relativeKErrorAlpha": "[4.40484595008767690764873457067e-16 +/- 3.20e-46]",
+    "relativeKPrimeErrorBeta": "[5.61842595674448585159277368708e-15 +/- 3.17e-45]",
+    "relativeNumeratorErrorGamma": "[4.21325762496268994010942098794e-13 +/- 3.67e-43]",
+    "fullThetaTransferFactor": "[1.00000000000043906200955652766 +/- 4.13e-30]",
+    "dominantSaddleCoefficientUpper": "[0.476754834120948301774740010086 +/- 3.10e-31]",
+    "fullSaddleCoefficientUpper": "[0.476754834121157626710274942650 +/- 2.49e-31]",
+    "gammaCoefficientLowerAt1e9": "[1.99999999800000000149999999900 +/- 2e-34]",
+    "curvatureCauchyCoefficientUpperAt1e9": "[0.00118545911543367624433341636272 +/- 3.15e-33]",
+    "relativeErrorCauchyCoefficientUpperAt1e9": "[1.78125000178125000044531250000e-6 +/- 3e-40]",
+    "finalCoefficientMarginLowerAt1e9": "[1.52205792351340691729539119467 +/- 4.53e-30]"
+  },
+  "nonclaims": [
+    "The arXiv source archive did not contain the advertised certificate modules, so their bounds were not replayed.",
+    "The compact range below the tail threshold is not certified.",
+    "No global rank-two theorem, rank-three theorem, RH implication, or novelty claim is made."
+  ]
+}
