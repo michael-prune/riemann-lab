@@ -1,0 +1,137 @@
+{
+  "schema": "riemann-lab.xi-rank-two-global-probe.v1",
+  "target": "kappa_3,x(log u) > psi_2(2x+1), sufficient for global rank-two exchange monotonicity",
+  "xiDenseScan": {
+    "status": "double_precision_gauss_legendre_not_interval_certified",
+    "nodeCount": 5000,
+    "thetaTerms": 12,
+    "sampleCount": 2501,
+    "range": [
+      0,
+      10000
+    ],
+    "failureCount": 0,
+    "failures": [],
+    "smallestAbsoluteMargin": {
+      "value": "2.1457141293500474e-09",
+      "x": 10000.0
+    },
+    "largestKappaToPsiRatio": {
+      "value": "0.8736477672391787",
+      "x": 0.0
+    },
+    "selected": {
+      "0.0": {
+        "momentKappa3": "-2.1003486590796419",
+        "gammaPsi2": "-2.404113806319188",
+        "margin": "0.30376514723954617",
+        "ratio": "0.8736477672391787"
+      },
+      "0.1": {
+        "momentKappa3": "-1.2428069006127704",
+        "gammaPsi2": "-1.4780361144359331",
+        "margin": "0.23522921382316264",
+        "ratio": "0.84085015817564523"
+      },
+      "0.5": {
+        "momentKappa3": "-0.29842224590499317",
+        "gammaPsi2": "-0.40411380631918858",
+        "margin": "0.10569156041419542",
+        "ratio": "0.73846090195019187"
+      },
+      "1.0": {
+        "momentKappa3": "-0.10192200694538056",
+        "gammaPsi2": "-0.15411380631918856",
+        "margin": "0.052191799373807995",
+        "ratio": "0.66134248046724387"
+      },
+      "5.0": {
+        "momentKappa3": "-0.0044395122522067941",
+        "gammaPsi2": "-0.0090498349708020686",
+        "margin": "0.0046103227185952745",
+        "ratio": "0.4905627855679372"
+      },
+      "20.0": {
+        "momentKappa3": "-0.00023164215563446295",
+        "gammaPsi2": "-0.00060957027183529855",
+        "margin": "0.00037792811620083561",
+        "ratio": "0.38000894455865292"
+      },
+      "100.0": {
+        "momentKappa3": "-7.0285322684343317e-06",
+        "gammaPsi2": "-2.4875312497395899e-05",
+        "margin": "1.7846780228961566e-05",
+        "ratio": "0.28255051144262494"
+      },
+      "10000.0": {
+        "momentKappa3": "-3.5416087377495246e-10",
+        "gammaPsi2": "-2.4998750031249998e-09",
+        "margin": "2.1457141293500474e-09",
+        "ratio": "0.14167143290453693"
+      }
+    }
+  },
+  "decreasingLogConcaveControl": {
+    "status": "high_precision_numeric_not_interval_certified",
+    "decimalPrecision": 80,
+    "density": "exp(-V(u)), V(u)=2u for 0<=u<=1 and V(u)=3u-1 for u>=1",
+    "decreasing": true,
+    "logConcave": true,
+    "potentialConvex": true,
+    "x": 0,
+    "mass": "0.477444119460564551351000084171252599432061409015070686421974",
+    "momentKappa3": "-2.42733875464923432881462841781529865487748352782827654950762",
+    "gammaPsi2": "-2.40411380631918857079947632302289998152997258468099776358454",
+    "margin": "-0.0232249483300457580151520947923986733475109431472787859230738",
+    "normalizedMellinLogThirdDerivative": "-0.185799586640366064121216758339189386780087545178230287384590",
+    "outcome": "violates_the_gamma_skew_comparison"
+  },
+  "saddleBudget": {
+    "status": "analytic_budget_not_a_completed_proof",
+    "dominantPhase": "Psi_z(u)=2z log(u)+5u+log(2pi exp(4u)-3)-pi exp(4u)",
+    "saddleMap": "K(u)=u(2pi exp(4u)-9/2-6/(2pi exp(4u)-3))",
+    "identity": "S0'''=-2(K''/(u K'^3)+1/(u^2 K'^2))",
+    "table": [
+      {
+        "k": 16,
+        "saddleU": "0.459507016440202108388798",
+        "minusK2SaddleActionThird": "0.749235629234564669334853"
+      },
+      {
+        "k": 100,
+        "saddleU": "0.766777827357270156583634",
+        "minusK2SaddleActionThird": "0.556672556024012942289199"
+      },
+      {
+        "k": 1000,
+        "saddleU": "1.21927549583091079760412",
+        "minusK2SaddleActionThird": "0.385132083789110469646448"
+      },
+      {
+        "k": 1000000,
+        "saddleU": "2.74221954639941306982831",
+        "minusK2SaddleActionThird": "0.179890892158441908235705"
+      },
+      {
+        "k": 1000000000,
+        "saddleU": "4.35359661939728255552546",
+        "minusK2SaddleActionThird": "0.114188572802636565691379"
+      }
+    ],
+    "crudeMainBoundForUAtLeastPoint98": "0.476754834120948301774740",
+    "crudeBoundDerivativeNumerator": "-160000(1280800u^2+1290806u-197)",
+    "tailReferenceK": 1000000000,
+    "gammaLowerCoefficient": "1.99999999800000000150000",
+    "logCurvatureCauchyCoefficient": "0.00118545911424821712978883",
+    "relativeErrorCauchyCoefficient": "0.00000178125000000000000000000",
+    "unallocatedCoefficientMargin": "1.52205792351480348259547",
+    "missingProofObligation": "directed bound transferring the dominant-saddle estimate to the full theta saddle, including derivatives of log(1+R)"
+  },
+  "outcome": "xi_candidate_survives_but_generic_log_concavity_routes_are_closed",
+  "claimBoundaries": [
+    "The decreasing log-concave control is a numerical counterexample to a proposed general proof route, not to the xi inequality.",
+    "The xi scan is finite, double precision, and non-interval.",
+    "The saddle calculation leaves an explicit full-theta perturbation bound unproved and is therefore a proof skeleton, not an internal theorem.",
+    "No global rank-two theorem or Riemann-Hypothesis result is claimed."
+  ]
+}
