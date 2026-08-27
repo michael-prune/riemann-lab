@@ -1,5 +1,15 @@
 # Global rank-two xi exchange attempt
 
+## Follow-up
+
+The theta-transfer obligation identified below was reduced and its scalar
+closure certified in
+[`../xi-rank-two-certification-20260827/README.md`](../xi-rank-two-certification-20260827/README.md).
+That follow-up proves a tail statement only conditional on the analytic bounds
+stated in the cited source: the arXiv v1 source archive did not contain the
+advertised certificate modules, so those bounds could not be replayed.  The
+compact range below `10^9` remains open.
+
 ## Outcome
 
 The xi inequality remains alive, but the obvious general theorem behind it does
