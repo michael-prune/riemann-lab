@@ -1,0 +1,356 @@
+{
+  "schema": "riemann-lab.xi-uniform-rank-diagonal-probe.v1",
+  "status": "high_precision_numeric_not_interval_certified",
+  "parameters": {
+    "decimalPrecision": 120,
+    "thetaTerms": 16,
+    "maxRank": 20,
+    "maxCoefficient": 82
+  },
+  "continuumEquation": "T'=-2/(lambda^2+1/(exp(T)-1)), T~2/lambda",
+  "monotonicity": [
+    {
+      "rank": 5,
+      "shiftRange": [
+        4,
+        16
+      ],
+      "strictlyDecreasing": true,
+      "minimumDecrease": "0.02099887447921362015492"
+    },
+    {
+      "rank": 10,
+      "shiftRange": [
+        9,
+        31
+      ],
+      "strictlyDecreasing": true,
+      "minimumDecrease": "0.01170852579793226192310"
+    },
+    {
+      "rank": 15,
+      "shiftRange": [
+        14,
+        46
+      ],
+      "strictlyDecreasing": true,
+      "minimumDecrease": "0.008217762130189048922167"
+    },
+    {
+      "rank": 20,
+      "shiftRange": [
+        19,
+        61
+      ],
+      "strictlyDecreasing": true,
+      "minimumDecrease": "0.006363754549278606871271"
+    }
+  ],
+  "gammaOneBarrier": {
+    "model": "a_k=1/k!, tau_(r,k)=log(1+r/k)",
+    "records": [
+      {
+        "rank": 5,
+        "shiftRange": [
+          4,
+          15
+        ],
+        "curvatureDominates": true,
+        "decreaseDominates": true,
+        "minimumCurvatureMargin": "0.1156580019485778902154",
+        "minimumDecreaseMargin": "0.005250517511074451547373"
+      },
+      {
+        "rank": 10,
+        "shiftRange": [
+          9,
+          30
+        ],
+        "curvatureDominates": true,
+        "decreaseDominates": true,
+        "minimumCurvatureMargin": "0.1404742751262047669979",
+        "minimumDecreaseMargin": "0.003611315565312892421478"
+      },
+      {
+        "rank": 15,
+        "shiftRange": [
+          14,
+          45
+        ],
+        "curvatureDominates": true,
+        "decreaseDominates": true,
+        "minimumCurvatureMargin": "0.1536481431299429987290",
+        "minimumDecreaseMargin": "0.002768157362624370010352"
+      },
+      {
+        "rank": 20,
+        "shiftRange": [
+          19,
+          60
+        ],
+        "curvatureDominates": true,
+        "decreaseDominates": true,
+        "minimumCurvatureMargin": "0.1623625435206123444804",
+        "minimumDecreaseMargin": "0.002256972596625196261644"
+      }
+    ],
+    "allCurvaturesDominate": true,
+    "allDecreasesDominate": true
+  },
+  "diagonalComparison": [
+    {
+      "rank": 5,
+      "shift": 1,
+      "lambda": 0.2,
+      "tau": "2.460627079412884934472",
+      "normalizedU": "0.2460627079412884934472",
+      "continuumT": "9.230401599928934",
+      "relativeContinuumError": "0.7334214494598122707541"
+    },
+    {
+      "rank": 5,
+      "shift": 2,
+      "lambda": 0.4,
+      "tau": "1.684675028201409837781",
+      "normalizedU": "0.3369350056402819675561",
+      "continuumT": "4.349642360081447",
+      "relativeContinuumError": "0.6126865409298008475755"
+    },
+    {
+      "rank": 5,
+      "shift": 4,
+      "lambda": 0.8,
+      "tau": "1.091401472340459762531",
+      "normalizedU": "0.4365605889361839050125",
+      "continuumT": "2.16330897259634",
+      "relativeContinuumError": "0.4954944087202709445978"
+    },
+    {
+      "rank": 5,
+      "shift": 5,
+      "lambda": 1.0,
+      "tau": "0.9365041555828264962064",
+      "normalizedU": "0.4682520777914132481032",
+      "continuumT": "1.749359772023434",
+      "relativeContinuumError": "0.4646589166163349179109"
+    },
+    {
+      "rank": 5,
+      "shift": 8,
+      "lambda": 1.6,
+      "tau": "0.6643515532404488322818",
+      "normalizedU": "0.5314812425923590658254",
+      "continuumT": "1.1259707012464362",
+      "relativeContinuumError": "0.4099743869844752012971"
+    },
+    {
+      "rank": 5,
+      "shift": 10,
+      "lambda": 2.0,
+      "tau": "0.5591882317136607140340",
+      "normalizedU": "0.5591882317136607140340",
+      "continuumT": "0.9137501256055022",
+      "relativeContinuumError": "0.3880293791006472655312"
+    },
+    {
+      "rank": 5,
+      "shift": 15,
+      "lambda": 3.0,
+      "tau": "0.4033400744003588176546",
+      "normalizedU": "0.6050101116005382264819",
+      "continuumT": "0.623639448633654",
+      "relativeContinuumError": "0.3532479780038836707995"
+    },
+    {
+      "rank": 10,
+      "shift": 2,
+      "lambda": 0.2,
+      "tau": "2.940920191971649626191",
+      "normalizedU": "0.2940920191971649626191",
+      "continuumT": "9.230401599928934",
+      "relativeContinuumError": "0.6813876232650275777273"
+    },
+    {
+      "rank": 10,
+      "shift": 5,
+      "lambda": 0.5,
+      "tau": "1.654597723274147482596",
+      "normalizedU": "0.4136494308185368706489",
+      "continuumT": "3.4452253291178474",
+      "relativeContinuumError": "0.5197417976438108610584"
+    },
+    {
+      "rank": 10,
+      "shift": 8,
+      "lambda": 0.8,
+      "tau": "1.199436098898127407508",
+      "normalizedU": "0.4797744395592509630030",
+      "continuumT": "2.16330897259634",
+      "relativeContinuumError": "0.4455548818537005874431"
+    },
+    {
+      "rank": 10,
+      "shift": 10,
+      "lambda": 1.0,
+      "tau": "1.021219840856838025293",
+      "normalizedU": "0.5106099204284190126466",
+      "continuumT": "1.749359772023434",
+      "relativeContinuumError": "0.4162322369653999126553"
+    },
+    {
+      "rank": 10,
+      "shift": 15,
+      "lambda": 1.5,
+      "tau": "0.7517829946993546538198",
+      "normalizedU": "0.5638372460245159903648",
+      "continuumT": "1.195990016370223",
+      "relativeContinuumError": "0.3714136536181272846355"
+    },
+    {
+      "rank": 10,
+      "shift": 20,
+      "lambda": 2.0,
+      "tau": "0.5985246762449650478995",
+      "normalizedU": "0.5985246762449650478995",
+      "continuumT": "0.9137501256055022",
+      "relativeContinuumError": "0.3449799245189170626609"
+    },
+    {
+      "rank": 10,
+      "shift": 30,
+      "lambda": 3.0,
+      "tau": "0.4281563475779856944372",
+      "normalizedU": "0.6422345213669785416557",
+      "continuumT": "0.623639448633654",
+      "relativeContinuumError": "0.3134553169847685040575"
+    },
+    {
+      "rank": 15,
+      "shift": 4,
+      "lambda": 0.26666666666666666,
+      "tau": "2.702371594542248716774",
+      "normalizedU": "0.3603162126056331622366",
+      "continuumT": "6.748937046129338",
+      "relativeContinuumError": "0.5995855975435246646303"
+    },
+    {
+      "rank": 15,
+      "shift": 8,
+      "lambda": 0.5333333333333333,
+      "tau": "1.683193995368870321185",
+      "normalizedU": "0.4488517320983654189827",
+      "continuumT": "3.225658255863289",
+      "relativeContinuumError": "0.4781858889393123315790"
+    },
+    {
+      "rank": 15,
+      "shift": 11,
+      "lambda": 0.7333333333333333,
+      "tau": "1.342858953537515677991",
+      "normalizedU": "0.4923816162970890819299",
+      "continuumT": "2.352806391126269",
+      "relativeContinuumError": "0.4292522501629637922187"
+    },
+    {
+      "rank": 15,
+      "shift": 15,
+      "lambda": 1.0,
+      "tau": "1.068504955205162559155",
+      "normalizedU": "0.5342524776025812795773",
+      "continuumT": "1.749359772023434",
+      "relativeContinuumError": "0.3892022828618873991117"
+    },
+    {
+      "rank": 15,
+      "shift": 22,
+      "lambda": 1.4666666666666666,
+      "tau": "0.7954075857562013219668",
+      "normalizedU": "0.5832988962212143027756",
+      "continuumT": "1.221379675138115",
+      "relativeContinuumError": "0.3487630407258449309376"
+    },
+    {
+      "rank": 15,
+      "shift": 30,
+      "lambda": 2.0,
+      "tau": "0.6197277205617471434711",
+      "normalizedU": "0.6197277205617471434711",
+      "continuumT": "0.9137501256055022",
+      "relativeContinuumError": "0.3217755016437554673530"
+    },
+    {
+      "rank": 15,
+      "shift": 45,
+      "lambda": 3.0,
+      "tau": "0.4413302155817239261682",
+      "normalizedU": "0.6619953233725858892524",
+      "continuumT": "0.623639448633654",
+      "relativeContinuumError": "0.2923311433414860545667"
+    },
+    {
+      "rank": 20,
+      "shift": 5,
+      "lambda": 0.25,
+      "tau": "3.003599662051825616644",
+      "normalizedU": "0.3754499577564782020805",
+      "continuumT": "7.242112038253425",
+      "relativeContinuumError": "0.5852591555907216237334"
+    },
+    {
+      "rank": 20,
+      "shift": 10,
+      "lambda": 0.5,
+      "tau": "1.834165181817888815057",
+      "normalizedU": "0.4585412954544722037642",
+      "continuumT": "3.4452253291178474",
+      "relativeContinuumError": "0.4676211258763942089533"
+    },
+    {
+      "rank": 20,
+      "shift": 15,
+      "lambda": 0.75,
+      "tau": "1.366304256676893512028",
+      "normalizedU": "0.5123640962538350670104",
+      "continuumT": "2.3021551866422554",
+      "relativeContinuumError": "0.4065107927542978956759"
+    },
+    {
+      "rank": 20,
+      "shift": 20,
+      "lambda": 1.0,
+      "tau": "1.100546060933922109471",
+      "normalizedU": "0.5502730304669610547356",
+      "continuumT": "1.749359772023434",
+      "relativeContinuumError": "0.3708863788144892311966"
+    },
+    {
+      "rank": 20,
+      "shift": 30,
+      "lambda": 1.5,
+      "tau": "0.8012467978543515455611",
+      "normalizedU": "0.6009350983907636591708",
+      "continuumT": "1.195990016370223",
+      "relativeContinuumError": "0.3300556134355533931469"
+    },
+    {
+      "rank": 20,
+      "shift": 40,
+      "lambda": 2.0,
+      "tau": "0.6338516386934170945331",
+      "normalizedU": "0.6338516386934170945331",
+      "continuumT": "0.9137501256055022",
+      "relativeContinuumError": "0.3063184114219504094863"
+    },
+    {
+      "rank": 20,
+      "shift": 60,
+      "lambda": 3.0,
+      "tau": "0.4500446159723932719196",
+      "normalizedU": "0.6750669239585899078794",
+      "continuumT": "0.623639448633654",
+      "relativeContinuumError": "0.2783576841420048053216"
+    }
+  ],
+  "allMonotone": true,
+  "boundary": "Coefficient quadrature, condensation, and continuum integration are not interval-certified; convergence is diagnostic only."
+}
