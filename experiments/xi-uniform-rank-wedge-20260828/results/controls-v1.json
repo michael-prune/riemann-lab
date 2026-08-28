@@ -1,0 +1,48 @@
+{
+  "schema": "riemann-lab.xi-uniform-rank-controls.v1",
+  "status": "exact_rational_and_high_precision_controls",
+  "positiveMomentMixture": {
+    "support": [
+      4,
+      5,
+      9,
+      11,
+      14
+    ],
+    "weights": [
+      8,
+      9,
+      3,
+      1,
+      3
+    ],
+    "sequence": "a_k=sum_j w_j*t_j^k/(2k)!",
+    "allInvolvedMinorsPositive": true,
+    "rank": 4,
+    "leftShift": 3,
+    "rightShift": 4,
+    "leftExchange": "4441964528441116563144448279/2178709330117098206342262450",
+    "rightExchange": "462177048824556983399598305769556007/214223848255940020485522583897890868",
+    "relativeIncrease": "27687356670505006150376550004132763906125032341915342377810489/475787367549518961989261363794693105312702774150465065806208086",
+    "conclusion": "positive moment structure plus even-factorial normalization does not imply exchange monotonicity"
+  },
+  "nearbyGammaPrecisionControl": {
+    "sequence": "a_k=1/Gamma(1.99*k+1), normalized by invariant c*lambda^k scaling",
+    "rank": 7,
+    "shift": 255,
+    "decimalPrecision": 600,
+    "condensationRatio": "0.95451489050368423397799300626790276054128082988094",
+    "determinantSign": "positive",
+    "conclusion": "unscaled large-shift determinants can report a false negative; invariant local normalization is mandatory"
+  },
+  "smoothLogConcaveBoundary": {
+    "kernel": "exp(-u^4)",
+    "facts": [
+      "strictly log-concave",
+      "after s(t)=exp(-t^2), the second Laguerre expression is 2*exp(-2t^2) and has concave logarithm",
+      "its Fourier transform has nonreal zeros, so the associated coefficient sequence is not PF-infinity"
+    ],
+    "conclusion": "log-concavity plus the known second-level kernel concavity cannot imply the all-rank exchange principle",
+    "boundary": "The nonreal-zero fact is source-backed reasoning, not certified by this script."
+  }
+}

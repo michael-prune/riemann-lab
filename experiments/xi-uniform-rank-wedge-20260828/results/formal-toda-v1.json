@@ -1,0 +1,163 @@
+{
+  "schema": "riemann-lab.xi-uniform-rank-formal-toda.v1",
+  "status": "exact_rational_formal_comparison_model_not_uniform_xi_theorem",
+  "model": "f'''(x)=2/x^2 exactly; tau_1=L f; exact Toda curvature recursion",
+  "maxRankChecked": 24,
+  "interpolationRanks": 12,
+  "heldOutRanks": 12,
+  "seriesOrder": 10,
+  "monotonicityExpansion": "-tau_r'(x)=sum c_(m,r)/x^m",
+  "coefficientLaws": [
+    {
+      "inversePower": 2,
+      "polynomialInRank": "2*r",
+      "degreeInRank": 1,
+      "rankValues": [
+        "2/1",
+        "4/1",
+        "6/1",
+        "8/1",
+        "10/1",
+        "12/1",
+        "14/1",
+        "16/1"
+      ]
+    },
+    {
+      "inversePower": 3,
+      "polynomialInRank": "-r*(r - 1)",
+      "degreeInRank": 2,
+      "rankValues": [
+        "0/1",
+        "-2/1",
+        "-6/1",
+        "-12/1",
+        "-20/1",
+        "-30/1",
+        "-42/1",
+        "-56/1"
+      ]
+    },
+    {
+      "inversePower": 4,
+      "polynomialInRank": "r*(5*r**2 - 3*r + 2)/4",
+      "degreeInRank": 3,
+      "rankValues": [
+        "1/1",
+        "8/1",
+        "57/2",
+        "70/1",
+        "140/1",
+        "246/1",
+        "791/2",
+        "596/1"
+      ]
+    },
+    {
+      "inversePower": 5,
+      "polynomialInRank": "-r*(r - 1)*(19*r**2 - r + 6)/16",
+      "degreeInRank": 4,
+      "rankValues": [
+        "0/1",
+        "-10/1",
+        "-261/4",
+        "-459/2",
+        "-595/1",
+        "-2565/2",
+        "-9765/4",
+        "-4249/1"
+      ]
+    },
+    {
+      "inversePower": 6,
+      "polynomialInRank": "r*(453*r**4 - 570*r**3 + 435*r**2 - 270*r + 208)/384",
+      "degreeInRank": 5,
+      "rankValues": [
+        "2/3",
+        "64/3",
+        "3077/16",
+        "10697/12",
+        "138505/48",
+        "59777/8",
+        "199451/12",
+        "99346/3"
+      ]
+    },
+    {
+      "inversePower": 7,
+      "polynomialInRank": "-r*(r - 1)*(1806*r**4 - 912*r**3 + 1533*r**2 - 1677*r + 1990)/1536",
+      "degreeInRank": 6,
+      "rankValues": [
+        "0/1",
+        "-103/3",
+        "-66209/128",
+        "-211889/64",
+        "-654175/48",
+        "-2738375/64",
+        "-14310653/128",
+        "-24559913/96"
+      ]
+    },
+    {
+      "inversePower": 8,
+      "polynomialInRank": "r*(2395*r**6 - 4214*r**5 + 4711*r**4 - 7910*r**3 + 15792*r**2 - 18410*r + 8660)/2048",
+      "degreeInRank": 7,
+      "rankValues": [
+        "1/2",
+        "64/1",
+        "739149/512",
+        "1595563/128",
+        "4143775/64",
+        "31438749/128",
+        "385343413/512",
+        "126467233/64"
+      ]
+    },
+    {
+      "inversePower": 9,
+      "polynomialInRank": "-r*(r - 1)*(2577555*r**6 - 2595645*r**5 + 4308525*r**4 - 10667835*r**3 + 29977812*r**2 - 48956148*r + 38104192)/2211840",
+      "degreeInRank": 8,
+      "rankValues": [
+        "0/1",
+        "-15332/135",
+        "-91893181/23040",
+        "-540118147/11520",
+        "-4258127969/13824",
+        "-813889337/576",
+        "-58509453569/11520",
+        "-132209722841/8640"
+      ]
+    },
+    {
+      "inversePower": 10,
+      "polynomialInRank": "r*(13705155*r**8 - 30930660*r**7 + 47903670*r**6 - 127998360*r**5 + 451550547*r**4 - 1238314644*r**3 + 2290045876*r**2 - 2388555120*r + 987312128)/11796480",
+      "degreeInRank": 9,
+      "rankValues": [
+        "2/5",
+        "1024/5",
+        "341136727/30720",
+        "271341065/1536",
+        "4504353871/3072",
+        "124900796419/15360",
+        "1053194183321/30720",
+        "455144363089/3840"
+      ]
+    },
+    {
+      "inversePower": 11,
+      "polynomialInRank": "-r*(r - 1)*(191365020*r**8 - 288315405*r**7 + 560247345*r**6 - 2140005105*r**5 + 9652791015*r**4 - 32936976450*r**3 + 80640534920*r**2 - 119647315780*r + 77769767016)/165150720",
+      "degreeInRank": 10,
+      "rankValues": [
+        "0/1",
+        "-159947/420",
+        "-35440396729/1146880",
+        "-1146690415307/1720320",
+        "-100182443791/14336",
+        "-5372222583787/114688",
+        "-113844649030697/491520",
+        "-112901188558979/122880"
+      ]
+    }
+  ],
+  "boundary": "Interpolation identities are exact on the generated ranks but do not bound the truncated remainder or xi-model error uniformly in rank."
+}
