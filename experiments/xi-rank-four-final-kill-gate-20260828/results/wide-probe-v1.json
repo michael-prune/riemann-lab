@@ -1,0 +1,66 @@
+{
+  "schema": "riemann-lab.xi-rank-four-wide-probe.v1",
+  "status": "high_precision_saddle_centered_numeric_not_interval_certified",
+  "decimalPrecision": 60,
+  "thetaTerms": 12,
+  "samples": [
+    {
+      "x": 100,
+      "fThird": "0.000142774241831693237331095",
+      "logD2Third": "0.000283762553715658023403524",
+      "logD3Third": "0.000423021852933891501500221",
+      "xSquaredLogD3Third": "4.23021852933891501500221",
+      "positive": true
+    },
+    {
+      "x": 300,
+      "fThird": "0.0000170037151245698618177738",
+      "logD2Third": "0.0000339383493323789881130163",
+      "logD3Third": "0.0000508046626641642093594153",
+      "xSquaredLogD3Third": "4.57241963977477884234738",
+      "positive": true
+    },
+    {
+      "x": 1000,
+      "fThird": "0.00000161312633793073818038830",
+      "logD2Third": "0.00000322433996174962818950179",
+      "logD3Third": "0.00000483364733272067714143387",
+      "xSquaredLogD3Third": "4.83364733272067714143387",
+      "positive": true
+    },
+    {
+      "x": 3000,
+      "fThird": "0.000000185498708933072667026345",
+      "logD2Third": "0.000000370925641247645083930636",
+      "logD3Third": "0.000000556280878950270689228404",
+      "xSquaredLogD3Third": "5.00652791055243620305564",
+      "positive": true
+    },
+    {
+      "x": 10000,
+      "fThird": "1.71657130008666465479558e-8",
+      "logD2Third": "3.43294707640837872073829e-8",
+      "logD3Third": "5.14912739678681883434577e-8",
+      "xSquaredLogD3Third": "5.14912739678681883434577",
+      "positive": true
+    },
+    {
+      "x": 100000,
+      "fThird": "1.77912384668306846826681e-10",
+      "logD2Third": "3.55822795937569075257827e-10",
+      "logD3Third": "5.33731233877345467761775e-10",
+      "xSquaredLogD3Third": "5.33731233877345467761775",
+      "positive": true
+    },
+    {
+      "x": 1000000,
+      "fThird": "1.82010721018243808846548e-12",
+      "logD2Third": "3.64021243777308762727491e-12",
+      "logD3Third": "5.46031568277901287634275e-12",
+      "xSquaredLogD3Third": "5.46031568277901287634275",
+      "positive": true
+    }
+  ],
+  "allPositive": true,
+  "boundary": "The integration window, theta cutoff, quadrature, and signs are not interval-certified."
+}

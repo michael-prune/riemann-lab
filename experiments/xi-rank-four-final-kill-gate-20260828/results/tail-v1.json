@@ -1,0 +1,110 @@
+{
+  "schema": "riemann-lab.xi-rank-four-final-kill-gate.v1",
+  "status": "checked_rank_four_scalar_tail_conditional_on_unreplayed_source_analytic_lemmas",
+  "conditionalContinuousConclusion": "(log D_3(x))'''>0 for every real x>=2000000",
+  "conditionalDiscreteConsequence": "Q_(4,k+1)<Q_(4,k) for every integer k>=2000001",
+  "arbPrecisionBits": 256,
+  "exactRecursion": "F_r=2F_(r-1)-F_(r-2)+J(2F_(r-1)-F_(r-1)(x-1)-F_(r-1)(x+1))",
+  "derivativeBudget": {
+    "f3": "37.0000000000000000000000000000",
+    "f4": "1850.00000000000000000000000000",
+    "f5": "185000.000000000000000000000000",
+    "f6": "[27750000.0000000000000000000000 +/- 1e-27]",
+    "f7": "[5550000000.00000000000000000000 +/- 1e-25]",
+    "JTauFSecondCorrection": "[9205.38471733045248814261790113 +/- 2.93e-27]",
+    "JTauFThirdCorrection": "[2010767.16989949553848038485234 +/- 1.12e-24]",
+    "JTauFFourthCorrection": "[632770492.805145280638136432113 +/- 3.14e-22]",
+    "JTauFFifthCorrection": "[261300898682.026770934848448517 +/- 1.30e-20]",
+    "g3AtCurvatureBase": "[76.0107671698994955384803848523 +/- 3.89e-29]",
+    "g4": "[4332.77049280514528063813643211 +/- 2.69e-27]",
+    "g5": "[631300.898682026770934848448517 +/- 1.31e-26]",
+    "tauGFloorExactAtCurvatureBase": "[0.990756609899084597764088141906 +/- 4.41e-31]",
+    "tauGFloorUsed": "[0.980000000000000000000000000000 +/- 3e-35]"
+  },
+  "rankFourBudgetAtThreshold": {
+    "inheritedThreeF3CoefficientLower": "[3.69000000000000000000000000000 +/- 1e-34]",
+    "rankThreeCorrectionConstantTwice": "[4021534.33979899107696076970468 +/- 2.24e-24]",
+    "rankFourNonlinearCorrectionConstant": "[2606139.85014920919682495075709 +/- 7.16e-25]",
+    "totalCorrectionCoefficientUpper": "[3.31383875189285473876136455857 +/- 2.92e-30]",
+    "finalCoefficientMarginLower": "[0.376161248107145261238635441427 +/- 8.69e-32]"
+  },
+  "formalRankScaling": {
+    "statement": "F_r'''(x)=2r/x^2+(r*d_1-r(r-1))/x^3+lower terms for each fixed r, if f'''=2/x^2+d_1/x^3+lower terms",
+    "universalRecurrence": [
+      {
+        "rank": 1,
+        "xMinus2Coefficient": 2,
+        "universalXMinus3RankCorrection": 0
+      },
+      {
+        "rank": 2,
+        "xMinus2Coefficient": 4,
+        "universalXMinus3RankCorrection": -2
+      },
+      {
+        "rank": 3,
+        "xMinus2Coefficient": 6,
+        "universalXMinus3RankCorrection": -6
+      },
+      {
+        "rank": 4,
+        "xMinus2Coefficient": 8,
+        "universalXMinus3RankCorrection": -12
+      },
+      {
+        "rank": 5,
+        "xMinus2Coefficient": 10,
+        "universalXMinus3RankCorrection": -20
+      },
+      {
+        "rank": 6,
+        "xMinus2Coefficient": 12,
+        "universalXMinus3RankCorrection": -30
+      },
+      {
+        "rank": 7,
+        "xMinus2Coefficient": 14,
+        "universalXMinus3RankCorrection": -42
+      },
+      {
+        "rank": 8,
+        "xMinus2Coefficient": 16,
+        "universalXMinus3RankCorrection": -56
+      },
+      {
+        "rank": 9,
+        "xMinus2Coefficient": 18,
+        "universalXMinus3RankCorrection": -72
+      },
+      {
+        "rank": 10,
+        "xMinus2Coefficient": 20,
+        "universalXMinus3RankCorrection": -90
+      },
+      {
+        "rank": 11,
+        "xMinus2Coefficient": 22,
+        "universalXMinus3RankCorrection": -110
+      },
+      {
+        "rank": 12,
+        "xMinus2Coefficient": 24,
+        "universalXMinus3RankCorrection": -132
+      }
+    ],
+    "interpretation": "the first rank-dependent correction is quadratic, not factorial; at x=lambda*r its ratio to the leading term tends 1/(2*lambda)",
+    "boundary": "fixed-r asymptotic algebra is not a remainder estimate uniform in r"
+  },
+  "decision": {
+    "fixedRankFour": "passes with a conservative threshold only twice the rank-three threshold",
+    "rawCauchyConstants": "grow quickly before normalization and are not themselves a uniform proof",
+    "normalizedMechanism": "survives because the exact first two asymptotic orders have polynomial rank growth",
+    "finalGate": "not killed mathematically; no theorem-level uniform-r bridge has been established"
+  },
+  "nonclaims": [
+    "The source saddle and contour certificates remain unavailable and unreplayed.",
+    "The derivative budget is deliberately conservative and does not estimate the true rank-four onset.",
+    "The formal rank scaling is not uniform in rank and cannot be substituted for an all-rank inequality.",
+    "No global rank-four theorem, all-rank theorem, RH implication, or novelty claim is made."
+  ]
+}
