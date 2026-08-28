@@ -1,0 +1,43 @@
+{
+  "schema": "riemann-lab.xi-rank-two-threshold-certificate.v1",
+  "status": "checked_threshold_reduction_conditional_on_unreplayed_source_analytic_lemmas",
+  "conditionalConclusion": "f'''(x)>0 for every real x>=100000",
+  "conditionalDiscreteConsequence": "Q_(2,k+1)<Q_(2,k) for every integer k>=100001",
+  "previousThreshold": 1000000000,
+  "newThreshold": 100000,
+  "improvementFactor": 10000,
+  "arbPrecisionBits": 256,
+  "sourceHypothesesStillUnreplayed": [
+    "kernel tube and full-saddle analytic continuation",
+    "horizontal concavity and contour deformation",
+    "uniform phase derivative bounds; their new-threshold scalar prerequisites are checked here"
+  ],
+  "factorization": {
+    "windowY": "1.00000000000000000000000000000",
+    "KAtOne": "[338.532649638648683167745230558 +/- 2.13e-28]",
+    "sigmaUpperAtThreshold": "[0.00536491506572336809909045892573 +/- 4.89e-33]",
+    "cubicError": "[0.0894152510953894683181743154288 +/- 4.81e-32]",
+    "gaussianLower": "[0.665541688372903467655332837936 +/- 3.31e-31]",
+    "localReplacement": "[0.0957165090666742279865067114075 +/- 2.62e-32]",
+    "gaussianTail": "[0.0165956894559546476597808052167 +/- 1.28e-32]",
+    "trueLocalTail": "[0.0328339994495595180678114697869 +/- 3.61e-32]",
+    "horizontalBLower": "[9656.91888699463317606199449421 +/- 1.12e-27]",
+    "horizontalTail": "[0.00313332029891312919174208722536 +/- 4.26e-33]",
+    "connector": "[1.46386751035900465218526577433e-43426 +/- 1.55e-43456]",
+    "relativeError": "[0.222795237115214947149163864814 +/- 1.01e-31]",
+    "logRelativeError": "[0.252051433236197615937539108553 +/- 1.79e-31]"
+  },
+  "signBudgetAtThreshold": {
+    "gammaLower": "[1.99998000014999900000624996250 +/- 2.19e-31]",
+    "fullSaddleUpper": "[0.476754834121157626710274942650 +/- 2.49e-31]",
+    "relativeErrorCauchyUpper": "[0.236300581647029309760565710321 +/- 5.15e-32]",
+    "curvatureFirstDerivativeCoefficient": "[8.44592176499723718152433141224 +/- 4.02e-30]",
+    "curvatureCauchyUpper": "[0.0528130281263203125000000000000 +/- 3e-36]",
+    "finalMarginLower": "[1.23386639037664937774568425218 +/- 7.31e-31]"
+  },
+  "nonclaims": [
+    "The source analytic lemmas remain unreplayed because the advertised ancillary modules are absent from the arXiv source archive.",
+    "The compact range 0<=x<100000 is not interval-certified.",
+    "No unconditional global rank-two theorem, rank-three theorem, RH implication, or novelty claim is made."
+  ]
+}

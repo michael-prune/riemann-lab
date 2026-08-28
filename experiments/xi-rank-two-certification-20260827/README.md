@@ -1,5 +1,12 @@
 # Rank-two xi certification attempt
 
+## Follow-up
+
+The effective conditional tail threshold is lowered from `10^9` to `10^5` in
+[`../xi-rank-two-threshold-20260827/README.md`](../xi-rank-two-threshold-20260827/README.md)
+by differentiating the curvature logarithm before applying Cauchy's estimate
+and rebuilding the scalar saddle factorization with a smaller local window.
+
 ## Outcome
 
 The full-theta tail transfer closes with enormous room **conditional on the
