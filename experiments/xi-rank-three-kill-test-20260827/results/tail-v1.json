@@ -1,0 +1,69 @@
+{
+  "schema": "riemann-lab.xi-rank-three-kill-test-certificate.v1",
+  "status": "checked_effective_rank_three_tail_conditional_on_unreplayed_source_analytic_lemmas",
+  "conditionalContinuousConclusion": "(log D_2(x))'''>0 for every real x>=1000000",
+  "conditionalDiscreteConsequence": "Q_(3,k+1)<Q_(3,k) for every integer k>=1000001",
+  "arbPrecisionBits": 256,
+  "exactGenericControl": {
+    "qSequence": [
+      "11/100",
+      "7/50",
+      "6/25",
+      "23/50",
+      "11/20",
+      "73/100",
+      "22/25"
+    ],
+    "qDefinition": "q_k=a_(k-1)a_(k+1)/a_k^2",
+    "rankTwoExchangeRatios": [
+      "89/11",
+      "43/7",
+      "19/6",
+      "27/23",
+      "9/11",
+      "27/73",
+      "3/22"
+    ],
+    "rankTwoStrictlyDecreasing": true,
+    "rankThreeShifts": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "rankThreeExchangeRatios": [
+      "4539641/82859",
+      "215176/10449",
+      "30449/10051",
+      "3911/1089"
+    ],
+    "rankThreeViolation": "Q_(3,5)>Q_(3,4)",
+    "conclusion": "decreasing rank-two exchange ratios do not formally imply rank-three monotonicity"
+  },
+  "derivativeHierarchy": {
+    "complexF3CoefficientUpper": "[36.5677298090100597754774748506 +/- 3.87e-29]",
+    "roundedF3CoefficientUpper": "37.0000000000000000000000000000",
+    "F4CoefficientUpper": "1850.00000000000000000000000000",
+    "F5CoefficientUpper": "185000.000000000000000000000000",
+    "tauFloorExactAtAnalyticBase": "[0.499815000000000000000000000000 +/- 3e-35]",
+    "tauFloorUsed": "[0.499000000000000000000000000000 +/- 3e-35]"
+  },
+  "rankThreeBudgetAtThreshold": {
+    "inheritedTwoF3CoefficientLower": "[2.46000000000000000000000000000 +/- 1e-34]",
+    "nonlinearCorrectionConstant": "[2010767.16989949553848038485234 +/- 1.12e-24]",
+    "nonlinearCorrectionCoefficientUpper": "[2.01076918066716812976839820661 +/- 1.65e-30]",
+    "finalCoefficientMarginLower": "[0.449230819332831870231601793392 +/- 3.57e-31]"
+  },
+  "mechanism": [
+    "g=2f+J(tau), tau=2f-f(x-1)-f(x+1), J(t)=log(1-exp(-t))",
+    "the inherited term 2f''' is order x^-2",
+    "the nonlinear J(tau) correction is bounded by order x^-3",
+    "the lift uses the same saddle derivative hierarchy as rank two, but is not a generic consequence of rank-two monotonicity"
+  ],
+  "nonclaims": [
+    "The source saddle and contour certificates remain unavailable and unreplayed.",
+    "The interval below 1000000 is supported numerically, not interval-certified.",
+    "This fixed-rank tail mechanism does not control ranks growing with k or the RH-critical k comparable to r regime.",
+    "No global rank-three theorem, all-rank theorem, RH implication, or novelty claim is made."
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "schema": "riemann-lab.xi-rank-three-wide-probe.v1",
+  "status": "high_precision_saddle_centered_numeric_not_interval_certified",
+  "decimalPrecision": 60,
+  "thetaTerms": 12,
+  "integrationWindow": "dominant saddle plus or minus 12 sqrt(u_s/x)",
+  "samples": [
+    {
+      "x": 100,
+      "saddle": "0.766777827357270156583634",
+      "tau": "0.0151295485089623207050496",
+      "fThird": "0.000142774241831693237331095",
+      "inheritedTwoFThird": "0.000285548483663386474662190",
+      "nonlinearCorrection": "-0.00000178592994772845125866597",
+      "logD2Third": "0.000283762553715658023403524",
+      "xSquaredLogD2Third": "2.83762553715658023403524",
+      "positive": true
+    },
+    {
+      "x": 300,
+      "saddle": "0.976158545597971142246770",
+      "tau": "0.00531378270175712697158618",
+      "fThird": "0.0000170037151245698618177738",
+      "inheritedTwoFThird": "0.0000340074302491397236355476",
+      "nonlinearCorrection": "-6.90809167607355225312876e-8",
+      "logD2Third": "0.0000339383493323789881130163",
+      "xSquaredLogD2Third": "3.05445143991410893017147",
+      "positive": true
+    },
+    {
+      "x": 1000,
+      "saddle": "1.21927549583091079760412",
+      "tau": "0.00166036196593164014880437",
+      "fThird": "0.00000161312633793073818038830",
+      "inheritedTwoFThird": "0.00000322625267586147636077659",
+      "nonlinearCorrection": "-1.91271411184817127480058e-9",
+      "logD2Third": "0.00000322433996174962818950179",
+      "xSquaredLogD2Third": "3.22433996174962818950179",
+      "positive": true
+    },
+    {
+      "x": 3000,
+      "saddle": "1.44980823790221094910509",
+      "tau": "0.000568697876192509517076666",
+      "fThird": "0.000000185498708933072667026345",
+      "inheritedTwoFThird": "0.000000370997417866145334052689",
+      "nonlinearCorrection": "-7.17766185002501220533747e-11",
+      "logD2Third": "0.000000370925641247645083930636",
+      "xSquaredLogD2Third": "3.33833077122880575537572",
+      "positive": true
+    },
+    {
+      "x": 10000,
+      "saddle": "1.70928875362969030604973",
+      "tau": "0.000174488469212810005231649",
+      "fThird": "1.71657130008666465479558e-8",
+      "inheritedTwoFThird": "3.43314260017332930959115e-8",
+      "nonlinearCorrection": "-1.95523764950588852864677e-12",
+      "logD2Third": "3.43294707640837872073829e-8",
+      "xSquaredLogD2Third": "3.43294707640837872073829",
+      "positive": true
+    },
+    {
+      "x": 30000,
+      "saddle": "1.95078418866287576627352",
+      "tau": "0.0000590945397825063110185489",
+      "fThird": "1.94443607744378836629556e-9",
+      "inheritedTwoFThird": "3.88887215488757673259113e-9",
+      "nonlinearCorrection": "-7.27994367610518395708075e-14",
+      "logD2Third": "3.88879935545081568075156e-9",
+      "xSquaredLogD2Third": "3.49991941990573411267640",
+      "positive": true
+    },
+    {
+      "x": 100000,
+      "saddle": "2.21946996495595174482485",
+      "tau": "0.0000179753618966319931124711",
+      "fThird": "1.77912384668306846826681e-10",
+      "inheritedTwoFThird": "3.55824769336613693653363e-10",
+      "nonlinearCorrection": "-1.97339904461839553593079e-15",
+      "logD2Third": "3.55822795937569075257827e-10",
+      "xSquaredLogD2Third": "3.55822795937569075257827",
+      "positive": true
+    },
+    {
+      "x": 300000,
+      "saddle": "2.46761173208321770319390",
+      "tau": "0.00000605339319080227322999181",
+      "fThird": "2.00072573639424699563165e-11",
+      "inheritedTwoFThird": "4.00145147278849399126330e-11",
+      "nonlinearCorrection": "-7.32772191144270134745358e-17",
+      "logD2Third": "4.00144414506658254856195e-11",
+      "xSquaredLogD2Third": "3.60129973055992429370576",
+      "positive": true
+    },
+    {
+      "x": 1000000,
+      "saddle": "2.74221954639941306982831",
+      "tau": "0.00000183290090070004480390229",
+      "fThird": "1.82010721018243808846548e-12",
+      "inheritedTwoFThird": "3.64021442036487617693096e-12",
+      "nonlinearCorrection": "-1.98259178854965605052769e-18",
+      "logD2Third": "3.64021243777308762727491e-12",
+      "xSquaredLogD2Third": "3.64021243777308762727491",
+      "positive": true
+    },
+    {
+      "x": 2000000,
+      "saddle": "2.90139857782476696722578",
+      "tau": "0.000000920670380869209540693149",
+      "fThird": "4.57438331725445723734159e-13",
+      "inheritedTwoFThird": "9.14876663450891447468319e-13",
+      "nonlinearCorrection": "-2.48057392178608220201186e-19",
+      "logD2Third": "9.14876415393499268860098e-13",
+      "xSquaredLogD2Third": "3.65950566157399707544039",
+      "positive": true
+    }
+  ],
+  "allPositive": true,
+  "boundary": "The integration window, theta cutoff, and quadrature are not interval-certified."
+}
