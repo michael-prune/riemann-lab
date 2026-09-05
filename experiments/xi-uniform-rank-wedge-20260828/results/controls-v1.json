@@ -40,9 +40,10 @@
     "facts": [
       "strictly log-concave",
       "after s(t)=exp(-t^2), the second Laguerre expression is 2*exp(-2t^2) and has concave logarithm",
-      "its Fourier transform has nonreal zeros, so the associated coefficient sequence is not PF-infinity"
+      "its Fourier transform has only real zeros by Polya; the associated coefficient sequence is PF-infinity"
     ],
-    "conclusion": "log-concavity plus the known second-level kernel concavity cannot imply the all-rank exchange principle",
-    "boundary": "The nonreal-zero fact is source-backed reasoning, not certified by this script."
+    "conclusion": "withdrawn counterexample: exp(-u^4) does not refute an all-rank exchange principle",
+    "boundary": "Corrected 2026-09-04: the earlier nonreal-zero assertion was false. No xi all-rank implication is established.",
+    "source": "https://arxiv.org/html/1901.06596v2#S2.SS2"
   }
 }

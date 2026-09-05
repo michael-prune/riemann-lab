@@ -24,6 +24,13 @@ The first positive-geometry research packet is the
 [Xi positive geometry / Grassmannian attempt](experiments/positive-grassmannian/README.md),
 with a reproducible high-precision scan and explicit kill conditions.
 
+## Research records
+
+- [Astra's positive-geometry investigation, 2026-09-04](experiments/astra-positive-geometry-20260904/README.md):
+  finite folded theta cutoffs have infinitely many nonreal Fourier zeros;
+  the earlier quartic counterexample is corrected; a source-defined stable
+  Grassmannian lift remains an open construction target.
+
 ## Lean starter
 
 The root Lean project is a small pinned Lean 4 project for controlled future contributions.

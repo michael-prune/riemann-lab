@@ -1,0 +1,115 @@
+{
+  "status": "numerical_checks_of_analytic_propositions_not_interval_certified",
+  "decimalPrecision": 80,
+  "checks": [
+    {
+      "check": "boundary_derivative",
+      "n": 1,
+      "relativeError": "2.1351954415320515916958460954662e-79"
+    },
+    {
+      "check": "incomplete_gamma_vs_quadrature",
+      "n": 1,
+      "t": 0,
+      "relativeError": "0.0"
+    },
+    {
+      "check": "incomplete_gamma_vs_quadrature",
+      "n": 1,
+      "t": 3,
+      "relativeError": "0.0"
+    },
+    {
+      "check": "boundary_derivative",
+      "n": 2,
+      "relativeError": "3.3362498586342911284641604292449e-81"
+    },
+    {
+      "check": "incomplete_gamma_vs_quadrature",
+      "n": 2,
+      "t": 0,
+      "relativeError": "1.1929249212569979389664662283425e-78"
+    },
+    {
+      "check": "incomplete_gamma_vs_quadrature",
+      "n": 2,
+      "t": 3,
+      "relativeError": "9.338679286168149446345238611876e-79"
+    }
+  ],
+  "foldedThetaCutoffs": [
+    {
+      "N": 1,
+      "positiveBoundaryDerivative": "0.03949876526774993468340851383656",
+      "directVsTailRelativeError": "2.1685578703059898978160936907078e-79",
+      "realAxisSamples": [
+        {
+          "t": 128,
+          "fourierValue": "-0.0000045126784768783993983275392126938",
+          "ratioToLeadingAsymptotic": "0.93592449870253220511816880744495"
+        },
+        {
+          "t": 256,
+          "fourierValue": "-0.0000011858516801888551798202758912958",
+          "ratioToLeadingAsymptotic": "0.9837772799484263389789112622835"
+        }
+      ]
+    },
+    {
+      "N": 2,
+      "positiveBoundaryDerivative": "0.000000082652795777273394114371932109123",
+      "directVsTailRelativeError": "1.0346810898709654407689665081523e-73",
+      "realAxisSamples": [
+        {
+          "t": 288,
+          "fourierValue": "-1.7855372617832754214210366082104e-12",
+          "ratioToLeadingAsymptotic": "0.89591405377526362979628376880892"
+        },
+        {
+          "t": 576,
+          "fourierValue": "-4.8437928582956725325541935798348e-13",
+          "ratioToLeadingAsymptotic": "0.97217172404214566367387683611219"
+        }
+      ]
+    },
+    {
+      "N": 4,
+      "positiveBoundaryDerivative": "2.8697362059101599942616385694446e-28",
+      "directVsTailRelativeError": "2.9800399286078552751447701774973e-53",
+      "realAxisSamples": [
+        {
+          "t": 800,
+          "fourierValue": "-7.8629403021466441056208109560856e-34",
+          "ratioToLeadingAsymptotic": "0.87678473425710281447228788413605"
+        },
+        {
+          "t": 1600,
+          "fourierValue": "-2.16625606765515232838853339595e-34",
+          "ratioToLeadingAsymptotic": "0.96622392012480346525128559731404"
+        }
+      ]
+    }
+  ],
+  "individualThetaComponents": [
+    {
+      "n": 1,
+      "fourthCumulant": "-0.000028010098672543603581849025615984",
+      "scaledFourthCumulant_limit12": "-0.69848019237508882044721209441616"
+    },
+    {
+      "n": 2,
+      "fourthCumulant": "0.00000094257021030841282383647496891891",
+      "scaledFourthCumulant_limit12": "6.0171817727997383304547094421124"
+    },
+    {
+      "n": 4,
+      "fourthCumulant": "0.0000000061593222828371218355234516854587",
+      "scaledFourthCumulant_limit12": "10.065893139998315154592022684701"
+    },
+    {
+      "n": 16,
+      "fourthCumulant": "1.1079716209985557020996629699091e-13",
+      "scaledFourthCumulant_limit12": "11.866645103325226285226313740673"
+    }
+  ]
+}
