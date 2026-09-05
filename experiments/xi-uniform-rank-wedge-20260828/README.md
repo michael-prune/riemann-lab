@@ -177,6 +177,11 @@ negative zeros and its coefficient sequence is PF-infinity. This differs
 from asking whether `exp(-u^4)` itself is a translation-PF kernel.
 
 The claimed counterexample to first/second-level kernel concavity is withdrawn.
+
+A later [explicit sextic control](../astra-brownian-determinant-20260905/README.md#5-an-exact-sextic-counterexample-to-the-two-concavity-shortcut)
+settles the general two-concavity question with an exact rational cumulant
+argument. It does not restore the incorrect quartic claim or alter the
+historical numerical results here.
 These observations provide neither a proof nor a refutation of a xi-specific
 all-rank exchange theorem. The separate exact positive-moment exchange
 reversal above and the missing uniform finite-rank transfer remain valid.

@@ -26,6 +26,10 @@ with a reproducible high-precision scan and explicit kill conditions.
 
 ## Research records
 
+- [Brownian determinants and the missing stability step, 2026-09-05](experiments/astra-brownian-determinant-20260905/README.md):
+  xi is an average of positive Brownian determinants; standard averaging
+  repairs fail; an exact sextic counterexample settles the two-concavity
+  shortcut left open in the previous investigation.
 - [Astra's positive-geometry investigation, 2026-09-04](experiments/astra-positive-geometry-20260904/README.md):
   finite folded theta cutoffs have infinitely many nonreal Fourier zeros;
   the earlier quartic counterexample is corrected; a source-defined stable
