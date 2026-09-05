@@ -27,6 +27,11 @@ corrected in this change. The supposed counterexample to the *combined*
 first/second-level concavity condition is withdrawn; no conclusion about that
 combined condition follows from it.
 
+The [2026-09-05 continuation](../astra-brownian-determinant-20260905/README.md#5-an-exact-sextic-counterexample-to-the-two-concavity-shortcut)
+subsequently gives a different, exact control: `exp(-x^6-100x^2)` satisfies
+both concavity conditions but has a nonreal Fourier zero, proved using a
+rational bound on its sixth cumulant. The quartic correction remains in force.
+
 The present investigation asks for a geometry that **generates** xi from
 positive local weights, giving zero-location control through stability.
 
