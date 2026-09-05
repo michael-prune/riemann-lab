@@ -42,10 +42,12 @@ test("xi diagonal probe dominates the explicit Gamma-one barrier", () => {
   assert.match(diagonal.boundary, /not interval-certified/i);
 });
 
-test("controls separate moment positivity and finite kernel concavity from the target", () => {
+test("moment control remains valid and the false quartic counterexample is withdrawn", () => {
   assert.equal(controls.schema, "riemann-lab.xi-uniform-rank-controls.v1");
   assert.equal(controls.positiveMomentMixture.allInvolvedMinorsPositive, true);
   assert.match(controls.positiveMomentMixture.conclusion, /does not imply exchange monotonicity/i);
-  assert.match(controls.smoothLogConcaveBoundary.conclusion, /cannot imply the all-rank exchange principle/i);
+  assert.match(controls.smoothLogConcaveBoundary.conclusion, /withdrawn counterexample/i);
+  assert.match(controls.smoothLogConcaveBoundary.facts.join(" "), /only real zeros/i);
+  assert.match(controls.smoothLogConcaveBoundary.source, /1901\.06596/);
   assert.equal(controls.nearbyGammaPrecisionControl.determinantSign, "positive");
 });

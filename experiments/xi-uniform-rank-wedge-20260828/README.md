@@ -8,10 +8,10 @@ argument and becomes the missing all-order content of RH.
 
 The positive result is an exact formal hydrodynamic limit.  It explains why
 rank four survived and why the fixed-rank constants did not grow
-factorially.  The negative result is that neither positive-moment structure,
-strict kernel log-concavity, nor the known second-level kernel concavity can
-control the finite-rank bridge.  Controls separate each of those properties
-from the desired exchange inequality or from PF-infinity.
+factorially.  The exact negative control shows that positive-moment structure alone does
+not force exchange monotonicity. Kernel concavity results have not supplied
+the finite-rank xi bridge. The earlier quartic counterexample was erroneous
+and is withdrawn in the correction below.
 
 **Program verdict:** archive this as a strong structural candidate and stop
 pushing the present angle.  Reactivate it only if a new xi-specific all-order
@@ -167,18 +167,19 @@ ratio increases by about `5.8%` from shift 3 to shift 4.  Thus xi's positive
 moment representation and even-factorial normalization do not imply the
 candidate.
 
-### Finite kernel concavity is insufficient
+### Corrected quartic control (2026-09-04)
 
-The xi kernel is now source-backed as strictly log-concave, and a separate
-source proves a second-level concavity inequality.  But the classical smooth
-kernel `exp(-u^4)` is strictly log-concave; after `s(t)=exp(-t^2)`, its first
-Laguerre expression is exactly `2 exp(-2t^2)`, whose logarithm is also
-strictly concave.  Nevertheless its Fourier transform has nonreal zeros, so
-its coefficient sequence is not PF-infinity.
+The earlier version incorrectly asserted that the Fourier transform of
+`exp(-u^4)` has nonreal zeros. Pólya's theorem gives **only real zeros**; see
+[Newman–Wu, Section 2.2](https://arxiv.org/html/1901.06596v2#S2.SS2).
+The positive generating function in the squared variable therefore has only
+negative zeros and its coefficient sequence is PF-infinity. This differs
+from asking whether `exp(-u^4)` itself is a translation-PF kernel.
 
-Therefore first- and second-level kernel concavity cannot yield the all-rank
-exchange principle.  Large finite success for such kernels cannot remove that
-exact external obstruction.
+The claimed counterexample to first/second-level kernel concavity is withdrawn.
+These observations provide neither a proof nor a refutation of a xi-specific
+all-rank exchange theorem. The separate exact positive-moment exchange
+reversal above and the missing uniform finite-rank transfer remain valid.
 
 ### The tail comparison is nonperturbative at the diagonal
 
